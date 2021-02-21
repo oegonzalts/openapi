@@ -1,0 +1,21 @@
+properties:
+  createdAt:
+    type: string
+    format: date-time
+  isActive:
+    type: boolean
+  eventName:
+    type: string
+    example: Example Event right here
+  id:
+    type: number
+    format: double
+required:
+  - createdAt
+  - isActive
+  - eventName
+  - id
+type: object
+description: |-
+  WebhookEventType contains information about the events that 
+  are available for subscription

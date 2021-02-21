@@ -1,0 +1,23 @@
+info:
+  title: ignite
+  version: 1.0.0
+  description: a Sails application
+  contact:
+    name: Oscar
+openapi: 3.0.0
+paths:
+  '/test/{testId}':
+    $ref: 'paths/test@{testId}.yaml'
+  /test:
+    $ref: paths/test.yaml
+  /webhooks/events:
+    $ref: paths/webhooks@events.yaml
+  '/webhooks/campaign/{campaignId}':
+    $ref: 'paths/webhooks@campaign@{campaignId}.yaml'
+  '/webhooks/campaign/{campaignId}/subscription/{webhookSubscriptionId}':
+    $ref: >-
+      paths/webhooks@campaign@{campaignId}@subscription@{webhookSubscriptionId}.yaml
+  '/webhooks/campaign/{campaignId}/test':
+    $ref: 'paths/webhooks@campaign@{campaignId}@test.yaml'
+servers:
+  - url: '/https:/myapi.com/api/v1'

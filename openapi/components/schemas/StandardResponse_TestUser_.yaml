@@ -1,0 +1,13 @@
+properties:
+  data:
+    $ref: ./TestUser.yaml
+  message:
+    type: string
+  success:
+    type: boolean
+required:
+  - data
+  - message
+  - success
+type: object
+additionalProperties: false

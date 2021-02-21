@@ -1,0 +1,15 @@
+properties:
+  code: {}
+  message: {}
+  details:
+    items: {}
+    type: array
+  success:
+    type: boolean
+required:
+  - code
+  - message
+  - details
+  - success
+type: object
+additionalProperties: false

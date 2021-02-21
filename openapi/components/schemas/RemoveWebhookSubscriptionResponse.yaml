@@ -1,0 +1,7 @@
+properties:
+  subscription:
+    $ref: ./WebhookSubscription.yaml
+required:
+  - subscription
+type: object
+description: Example of RemoveWebhookSubscriptionResponse

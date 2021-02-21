@@ -1,0 +1,14 @@
+properties:
+  webhookSecret:
+    type: string
+  url:
+    type: string
+  eventId:
+    type: string
+    description: This is the eventId (RegisterWebhookBody)
+    example: Conversion
+required:
+  - webhookSecret
+  - url
+  - eventId
+type: object

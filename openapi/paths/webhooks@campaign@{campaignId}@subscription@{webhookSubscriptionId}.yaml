@@ -1,0 +1,37 @@
+delete:
+  operationId: Remove Webhook Subscription
+  responses:
+    '200':
+      description: Ok
+      content:
+        application/json:
+          schema:
+            $ref: >-
+              ../components/schemas/StandardResponse_RemoveWebhookSubscriptionResponse_.yaml
+    '400':
+      description: ''
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/ErrorResponse.yaml
+  description: |-
+    Deletes subscription to a webhook event for a certain campaign
+    Supply the campaign ID and subscription ID
+  tags:
+    - Webhooks
+  security: []
+  parameters:
+    - description: The campaign's identifier
+      in: path
+      name: campaignId
+      required: true
+      schema:
+        type: string
+      example: '1'
+    - description: The subscription's identifier
+      in: path
+      name: webhookSubscriptionId
+      required: true
+      schema:
+        type: string
+      example: '24'

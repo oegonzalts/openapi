@@ -1,0 +1,28 @@
+get:
+  operationId: Get Webhook Events
+  responses:
+    '200':
+      description: Ok
+      content:
+        application/json:
+          schema:
+            $ref: >-
+              ../components/schemas/StandardResponse_GetWebhookEventsResponse_.yaml
+          examples:
+            Example 1:
+              value:
+                data:
+                  events:
+                    - id: 1
+                      eventName: Conversion
+                      createdAt: '2021-02-19T02:18:23.342Z'
+                      isActive: true
+                message: This is the message
+                success: true
+  description: |-
+    Retrieves system wide events that can trigger webhooks and can 
+    be subscribed to.
+  tags:
+    - Webhooks
+  security: []
+  parameters: []
