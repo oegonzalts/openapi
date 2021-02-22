@@ -1,10 +1,14 @@
 properties:
   data:
     $ref: ./GetWebhookEventsResponse.yaml
+    description: Holds main response data
   message:
     type: string
+    description: Describes a message about the response
   success:
     type: boolean
+    description: Represents whether the response was successful or not
+    example: true
 required:
   - data
   - message
