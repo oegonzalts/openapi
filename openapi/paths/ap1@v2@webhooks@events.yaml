@@ -24,7 +24,9 @@ get:
       content:
         application/json:
           schema:
-            $ref: ../components/schemas/E_WH_MISSING_PARAMS.yaml
+            anyOf:
+              - $ref: ../components/schemas/E_WH_MISSING_PARAMS.yaml
+              - $ref: ../components/schemas/E_WH_CAMPAIGN_MISSING_SUB.yaml
   description: |-
     Retrieves system wide events that can trigger webhooks and can 
     be subscribed to.

@@ -1,12 +1,14 @@
 properties:
   code:
     type: string
-    description: This is a E_WH_MISSING_PARAMS code
-    example: E_WH_MISSING_PARAMS
+    description: This is a E_WH_CAMPAIGN_MISSING_SUB code
+    example: E_WH_CAMPAIGN_MISSING_SUB
+    default: E_WH_2
   message:
     type: string
-    description: This is a E_WH_MISSING_PARAMS message
-    example: Missing required parameters. Make sure payload includes required inputs.
+    description: This is a E_WH_CAMPAIGN_MISSING_SUB message
+    example: Subscription does not exist for campaign
+    default: Subscription does not exist for campaign
   details:
     items: {}
     type: array
