@@ -14,6 +14,12 @@ post:
         application/json:
           schema:
             $ref: ../components/schemas/ErrorResponse.yaml
+    '404':
+      description: ''
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/E_API_NOT_FOUND_404.yaml
     '405':
       description: Imported json
       content:
@@ -40,6 +46,18 @@ post:
                 message: >-
                   Subscription does not exist or is not assigned to
                   corresponding campaign.
+    '422':
+      description: ''
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/E_VALIDATION_ERROR_422.yaml
+    '500':
+      description: ''
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/E_SERVER_ERROR_500.yaml
   description: |-
     Creates a subscription for a specific webhook event to a campaign.
     Supply the campain ID to register to and webhook notification details.

@@ -3,6 +3,7 @@ properties:
     type: string
     format: date-time
     description: Describes when the subscription was created
+    example: '2021-02-19T02:18:23.342Z'
   isActive:
     type: boolean
     description: Describes whether the subscription is on or off
@@ -12,16 +13,18 @@ properties:
     description: >-
       Stores a secret key used to encrypt notifications when they are sent to
       hosts
+    example: xxxxxxxxxxxxxxxx
   webhookEventTypeId:
     type: string
     description: Represents the type of event the webhook is subscribed to
+    example: '1'
   assignment_ItemId:
     type: number
     format: double
     description: >-
       Represents the id of the object in the scope chosen by
       assignment_AssignmentTypeId
-    example: 151
+    example: '151'
   assignment_AssignmentTypeId:
     $ref: ./WebhookLevel.yaml
     description: >-
@@ -35,6 +38,7 @@ properties:
   id:
     type: string
     description: Identifier
+    example: '10'
 required:
   - createdAt
   - isActive

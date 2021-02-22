@@ -1,0 +1,27 @@
+properties:
+  code:
+    type: string
+    description: Server error code
+    example: SERVER_ERROR_500
+    default: SERVER_ERROR_500
+  message:
+    type: string
+    description: Server error messagae
+    example: Internal Server Error.
+    default: Internal Server Error.
+  details:
+    items: {}
+    type: array
+    description: Returns extra details about why the response failed
+    default: []
+  success:
+    type: boolean
+    description: Returns whether the response was successful or not
+    default: false
+required:
+  - code
+  - message
+  - details
+  - success
+type: object
+additionalProperties: false

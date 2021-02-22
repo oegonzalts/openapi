@@ -15,6 +15,7 @@ properties:
     type: number
     format: double
     description: Identifier
+    example: '12'
 required:
   - createdAt
   - isActive
