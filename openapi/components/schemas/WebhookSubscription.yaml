@@ -2,28 +2,32 @@ properties:
   createdAt:
     type: string
     format: date-time
+    description: Describes when the subscription was created
   isActive:
     type: boolean
+    description: Describes whether the subscription is on or off
+    example: true
   webhookSecret:
     type: string
     description: >-
-      webhookSecret is a private key used to encrpt notifications when they are
-      sent to hosts
+      Stores a secret key used to encrypt notifications when they are sent to
+      hosts
   webhookEventTypeId:
     type: string
+    description: Represents the type of event the webhook is subscribed to
   assignment_ItemId:
     type: number
     format: double
-    description: >-
-      assignment_ItemId represents the id of the scoped object
-      (assignment_AssignmentTypeId)
+    description: Represents the id of the scoped object (assignment_AssignmentTypeId)
+    example: 151
   assignment_AssignmentTypeId:
     $ref: ./WebhookLevel.yaml
-    description: assignment_AssignmentTypeId represents the scope of the subscription
+    description: Represents the scope of the subscription
     example: WebhookLevel.Campaign
   webhookUrl:
     type: string
-    description: webhookUrl is the http address where webhook notifications are sent to
+    description: Represents the http url address where webhook notifications are sent to
+    example: www.send-to-url.com
   id:
     type: string
 required:
@@ -36,4 +40,6 @@ required:
   - webhookUrl
   - id
 type: object
-description: WebhookSubscription contains information about subscriptions
+description: |-
+  WebhookSubscription contains information about registered subscribers 
+  to different event in the system

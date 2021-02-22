@@ -2,11 +2,15 @@ properties:
   createdAt:
     type: string
     format: date-time
+    description: Describes when the webhook event was first created
   isActive:
     type: boolean
+    description: Represents whether the event is on or off
+    example: false
   eventName:
-    type: string
-    example: Example Event right here
+    $ref: ./eventNames.yaml
+    description: Represents name of the event
+    example: order_conversion
   id:
     type: number
     format: double

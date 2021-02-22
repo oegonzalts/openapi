@@ -1,14 +1,20 @@
 properties:
   webhookSecret:
     type: string
+    description: This is the secret to pass messages securely
   url:
     type: string
+    description: This is the http url to send notifications to
   eventId:
     type: string
-    description: This is the eventId (RegisterWebhookBody)
-    example: Conversion
+    description: This is the eventId to subscribe to
+    example: 1
 required:
   - webhookSecret
   - url
   - eventId
 type: object
+example:
+  eventId: 2
+  url: www.example-url.com
+  webhookSecret: here-is-the-secret
