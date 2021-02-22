@@ -1,0 +1,63 @@
+post:
+  operationId: RegisterCampaignToWebhookTest
+  responses:
+    '200':
+      description: Ok
+      content:
+        application/json:
+          schema:
+            $ref: >-
+              ../components/schemas/StandardResponse_RegisterCampaignToWebhookResponse_.yaml
+    '400':
+      description: ''
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/ErrorResponse.yaml
+    '405':
+      description: Imported json
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/TestResponse.yaml
+          examples:
+            Example 1:
+              value:
+                code: E_WH_TEST
+                message: >-
+                  Subscription does not exist or is not assigned to
+                  corresponding campaign.
+    '410':
+      description: E_WH_MISSING_PARAMS
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/TestResponse.yaml
+          examples:
+            Example 1:
+              value:
+                code: E_WH_TEST
+                message: >-
+                  Subscription does not exist or is not assigned to
+                  corresponding campaign.
+  description: |-
+    Creates a subscription for a specific webhook event to a campaign.
+    Supply the campain ID to register to and webhook notification details.
+  summary: Testing Endpoint for webhook
+  tags:
+    - Webhooks
+  security: []
+  parameters:
+    - description: The campaign's identifier
+      in: path
+      name: campaignId
+      required: true
+      schema:
+        type: string
+  requestBody:
+    description: The metadata to receive webhook notifications
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/RegisterWebhookBody.yaml

@@ -11,18 +11,18 @@ info:
     email: oscar@ticketsocket.com
 openapi: 3.0.0
 paths:
-  '/test/{testId}':
-    $ref: 'paths/test@{testId}.yaml'
-  /test:
-    $ref: paths/test.yaml
-  /webhooks/events:
-    $ref: paths/webhooks@events.yaml
-  '/webhooks/campaign/{campaignId}':
-    $ref: 'paths/webhooks@campaign@{campaignId}.yaml'
-  '/webhooks/campaign/{campaignId}/subscription/{webhookSubscriptionId}':
+  '/ap1/v2/test/{testId}':
+    $ref: 'paths/ap1@v2@test@{testId}.yaml'
+  /ap1/v2/test:
+    $ref: paths/ap1@v2@test.yaml
+  /ap1/v2/webhooks/events:
+    $ref: paths/ap1@v2@webhooks@events.yaml
+  '/ap1/v2/webhooks/campaign/{campaignId}':
+    $ref: 'paths/ap1@v2@webhooks@campaign@{campaignId}.yaml'
+  '/ap1/v2/webhooks/campaign/{campaignId}/subscription/{webhookSubscriptionId}':
     $ref: >-
-      paths/webhooks@campaign@{campaignId}@subscription@{webhookSubscriptionId}.yaml
-  '/webhooks/campaign/{campaignId}/test':
-    $ref: 'paths/webhooks@campaign@{campaignId}@test.yaml'
+      paths/ap1@v2@webhooks@campaign@{campaignId}@subscription@{webhookSubscriptionId}.yaml
+  '/ap1/v2/webhooks/campaign/{campaignId}/test':
+    $ref: 'paths/ap1@v2@webhooks@campaign@{campaignId}@test.yaml'
 servers:
-  - url: /app.icecreamsocial.io
+  - url: 'https://app.icecreamsocial.io/api/v2'

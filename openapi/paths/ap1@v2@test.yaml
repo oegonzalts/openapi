@@ -1,0 +1,37 @@
+post:
+  operationId: CreateTest
+  responses:
+    '203':
+      description: Created annotation
+    '400':
+      description: Validation Failed
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/ValidateErrorJSON.yaml
+          examples:
+            Example 1:
+              value:
+                message: Validation failed
+                details:
+                  requestBody:
+                    message: id is an excess property and therefore not allowed
+                    value: 52907745-7672-470e-a803-a2f8feb52944
+    default:
+      description: Unexpected error
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/FailedResponse.yaml
+  description: Creates a test user
+  summary: Get TestUser
+  tags:
+    - Test
+  security: []
+  parameters: []
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/TestCreationParams.yaml
