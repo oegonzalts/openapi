@@ -1,6 +1,5 @@
 post:
   operationId: CreateTest
-  summary: This is a test
   responses:
     '203':
       description: Created annotation
@@ -24,6 +23,8 @@ post:
         application/json:
           schema:
             $ref: ../components/schemas/FailedResponse.yaml
+  description: Creates a test user
+  summary: Get TestUser
   tags:
     - Test
   security: []

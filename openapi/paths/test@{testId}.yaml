@@ -1,6 +1,5 @@
 get:
   operationId: GetTest
-  summary: 'This is a sample test'
   responses:
     '200':
       description: Ok
@@ -52,6 +51,7 @@ get:
 
     Supply the unique TestUser ID from either and receive corresponding TestUser
     details.
+  summary: Get TestUser
   tags:
     - Test
   security: []

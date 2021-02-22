@@ -1,6 +1,5 @@
 post:
   operationId: RegisterCampaignToWebhook
-  summary: 'Path to make a webhook subscription to a campaign'
   responses:
     '200':
       description: Ok
@@ -45,6 +44,7 @@ post:
   description: |-
     Creates a subscription for a specific webhook event to a campaign.
     Supply the campain ID to register to and webhook notification details.
+  summary: Register Campaign to Webhook
   tags:
     - Webhooks
   security: []
@@ -63,8 +63,7 @@ post:
         schema:
           $ref: ../components/schemas/RegisterWebhookBody.yaml
 get:
-  operationId: GetRegisteredCampaignWebhooks
-  summary: Path to get registered webhook subscriptions to a specific webhook
+  operationId: GetCampaignRegisteredWebhooks
   responses:
     '200':
       description: Ok
@@ -76,6 +75,7 @@ get:
   description: |-
     Retrieves a list of subscribed webhook events for a certain campaign
     Supply the campaign ID of interest
+  summary: Get Registered Campaign Webhooks
   tags:
     - Webhooks
   security: []

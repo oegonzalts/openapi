@@ -1,6 +1,5 @@
 post:
-  operationId: TestingEndpoint
-  summary: Path is a test endpoint
+  operationId: RegisterCampaignToWebhookTest
   responses:
     '200':
       description: Ok
@@ -44,6 +43,7 @@ post:
   description: |-
     Creates a subscription for a specific webhook event to a campaign.
     Supply the campain ID to register to and webhook notification details.
+  summary: Testing Endpoint for webhook
   tags:
     - Webhooks
   security: []

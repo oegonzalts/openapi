@@ -1,6 +1,5 @@
 get:
   operationId: GetWebhookEvents
-  summary: Path will retrieve webhook events
   responses:
     '200':
       description: Ok
@@ -23,6 +22,7 @@ get:
   description: |-
     Retrieves system wide events that can trigger webhooks and can 
     be subscribed to.
+  summary: Get Webhook Events
   tags:
     - Webhooks
   security: []

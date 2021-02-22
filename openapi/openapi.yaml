@@ -1,12 +1,14 @@
+components:
+  securitySchemes: {}
 info:
-  title: ignite
+  title: ics-api
   version: 1.0.0
-  description: a Sails application
-  contact:
-    name: Oscar
+  description: A potent API created for digital campaign marketing
   license:
-    name: ''
-    url: ''
+    name: UNLICENSED
+  contact:
+    name: 'Oscar '
+    email: oscar@ticketsocket.com
 openapi: 3.0.0
 paths:
   '/test/{testId}':
@@ -23,4 +25,4 @@ paths:
   '/webhooks/campaign/{campaignId}/test':
     $ref: 'paths/webhooks@campaign@{campaignId}@test.yaml'
 servers:
-  - url: '/https:/myapi.com/api/v1'
+  - url: /app.icecreamsocial.io

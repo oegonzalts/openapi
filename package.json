@@ -9,6 +9,7 @@
     "start": "openapi preview-docs",
     "build": "openapi bundle -o dist",
     "join-generated-docs": "openapi split /Users/oegonzal/Dev/ICS/ics-api/build/swagger.json --outDir openapi",
+    "lint": "openapi lint openapi/openapi.yaml",
     "test": "openapi lint"
   }
 }
