@@ -18,11 +18,15 @@ properties:
   assignment_ItemId:
     type: number
     format: double
-    description: Represents the id of the scoped object (assignment_AssignmentTypeId)
+    description: >-
+      Represents the id of the object in the scope chosen by
+      assignment_AssignmentTypeId
     example: 151
   assignment_AssignmentTypeId:
     $ref: ./WebhookLevel.yaml
-    description: Represents the scope of the subscription
+    description: >-
+      Represents the scope to register (Campaign, Client, etc | denoted by
+      enums)
     example: WebhookLevel.Campaign
   webhookUrl:
     type: string
@@ -30,6 +34,7 @@ properties:
     example: www.send-to-url.com
   id:
     type: string
+    description: Identifier
 required:
   - createdAt
   - isActive

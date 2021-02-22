@@ -4,10 +4,10 @@ properties:
     description: Holds main response data
   message:
     type: string
-    description: Describes a message about the response
+    description: Returns a message about the response
   success:
     type: boolean
-    description: Represents whether the response was successful or not
+    description: Returns whether the response was successful or not
     example: true
 required:
   - data
