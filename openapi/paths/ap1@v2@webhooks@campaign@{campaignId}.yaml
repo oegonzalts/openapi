@@ -63,6 +63,10 @@ post:
       application/json:
         schema:
           $ref: ../components/schemas/RegisterWebhookBody.yaml
+        example:
+          eventId: 1
+          url: www.example-subscription-url.com
+          webhookSecret: here-is-the-secret-x
 get:
   operationId: GetCampaignRegisteredWebhooks
   responses:
