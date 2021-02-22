@@ -14,10 +14,10 @@ get:
                 data:
                   events:
                     - id: 1
-                      eventName: Conversion
+                      eventName: order_conversion
                       createdAt: '2021-02-19T02:18:23.342Z'
                       isActive: true
-                message: This is the message
+                message: Webhook event types retrieved.
                 success: true
   description: |-
     Retrieves system wide events that can trigger webhooks and can 

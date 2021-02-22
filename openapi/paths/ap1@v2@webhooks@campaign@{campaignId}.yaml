@@ -55,8 +55,9 @@ post:
       required: true
       schema:
         type: string
+      example: '1'
   requestBody:
-    description: The metadata to receive webhook notifications
+    description: The payload to register webhook notifications
     required: true
     content:
       application/json:
@@ -86,3 +87,4 @@ get:
       required: true
       schema:
         type: string
+      example: '1'
