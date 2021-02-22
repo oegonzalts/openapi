@@ -2,11 +2,11 @@ properties:
   code:
     type: string
     description: Not found error code
-    example: API_NOT_FOUND_404
-    default: API_NOT_FOUND_404
+    example: RESOURCE_NOT_FOUND_404
+    default: RESOURCE_NOT_FOUND_404
   message:
     type: string
-    description: Not found error messagae
+    description: Not found error message
     example: Resource not found.
     default: Resource not found.
   details:

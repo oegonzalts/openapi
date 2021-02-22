@@ -22,7 +22,5 @@ paths:
   '/ap1/v2/webhooks/campaign/{campaignId}/subscription/{webhookSubscriptionId}':
     $ref: >-
       paths/ap1@v2@webhooks@campaign@{campaignId}@subscription@{webhookSubscriptionId}.yaml
-  '/ap1/v2/webhooks/campaign/{campaignId}/test':
-    $ref: 'paths/ap1@v2@webhooks@campaign@{campaignId}@test.yaml'
 servers:
   - url: 'https://app.icecreamsocial.io/api/v2'

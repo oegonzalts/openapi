@@ -15,19 +15,19 @@ delete:
           schema:
             $ref: ../components/schemas/ErrorResponse.yaml
     '404':
-      description: ''
+      description: Resource not found
       content:
         application/json:
           schema:
-            $ref: ../components/schemas/E_API_NOT_FOUND_404.yaml
+            $ref: ../components/schemas/E_RESOURCE_NOT_FOUND_404.yaml
     '422':
-      description: ''
+      description: Validation Failed
       content:
         application/json:
           schema:
             $ref: ../components/schemas/E_VALIDATION_ERROR_422.yaml
     '500':
-      description: ''
+      description: Internal Server Error
       content:
         application/json:
           schema:

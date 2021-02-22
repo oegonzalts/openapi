@@ -13,42 +13,21 @@ post:
       content:
         application/json:
           schema:
-            $ref: ../components/schemas/E_WH_TEST1.yaml
+            $ref: ../components/schemas/ErrorResponse.yaml
     '404':
-      description: ''
+      description: Resource not found
       content:
         application/json:
           schema:
-            $ref: ../components/schemas/E_API_NOT_FOUND_404.yaml
-    '405':
-      description: Testing hardcoded object (2nd version)
-      content:
-        application/json:
-          schema:
-            $ref: ../components/schemas/TestResponse.yaml
-          examples:
-            Example 1:
-              value:
-                code: code here (2nd version)
-                message: message here (2nd version)
+            $ref: ../components/schemas/E_RESOURCE_NOT_FOUND_404.yaml
     '422':
       description: Validation Failed
       content:
         application/json:
           schema:
-            $ref: ../components/schemas/ValidateErrorJSONTest.yaml
-          examples:
-            Example 1:
-              value:
-                message: Validation failed (edited)
-                details:
-                  requestBody:
-                    message: >-
-                      id is an excess property and therefore not allowed
-                      (edited)
-                    value: 52907745-7672-470e-a803-a2f8feb52944 (edited)
+            $ref: ../components/schemas/E_VALIDATION_ERROR_422.yaml
     '500':
-      description: ''
+      description: Internal Server Error
       content:
         application/json:
           schema:
@@ -85,20 +64,26 @@ get:
           schema:
             $ref: >-
               ../components/schemas/StandardResponse_GetCampaignRegisteredWebhooksResponse_.yaml
-    '404':
-      description: ''
+    '400':
+      description: Bad Request
       content:
         application/json:
           schema:
-            $ref: ../components/schemas/E_API_NOT_FOUND_404.yaml
+            $ref: ../components/schemas/E_BAD_REQUEST_400.yaml
+    '404':
+      description: Resource not found
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/E_RESOURCE_NOT_FOUND_404.yaml
     '422':
-      description: ''
+      description: Validation Failed
       content:
         application/json:
           schema:
             $ref: ../components/schemas/E_VALIDATION_ERROR_422.yaml
     '500':
-      description: ''
+      description: Internal Server Error
       content:
         application/json:
           schema:
