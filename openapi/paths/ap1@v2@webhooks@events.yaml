@@ -19,6 +19,12 @@ get:
                       isActive: true
                 message: Webhook event types retrieved.
                 success: true
+    '422':
+      description: Validation Failed
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/E_WH_MISSING_PARAMS.yaml
   description: |-
     Retrieves system wide events that can trigger webhooks and can 
     be subscribed to.
