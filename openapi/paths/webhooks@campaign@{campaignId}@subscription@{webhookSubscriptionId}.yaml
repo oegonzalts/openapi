@@ -1,5 +1,6 @@
 delete:
-  operationId: Remove Webhook Subscription
+  operationId: RemoveWebhookSubscription
+  summary: Path removes a subscription
   responses:
     '200':
       description: Ok

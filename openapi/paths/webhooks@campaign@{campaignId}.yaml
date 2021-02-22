@@ -1,5 +1,6 @@
 post:
-  operationId: Register Campaign to Webhook
+  operationId: RegisterCampaignToWebhook
+  summary: 'Path to make a webhook subscription to a campaign'
   responses:
     '200':
       description: Ok
@@ -62,7 +63,8 @@ post:
         schema:
           $ref: ../components/schemas/RegisterWebhookBody.yaml
 get:
-  operationId: Get Registered Campaign Webhooks
+  operationId: GetRegisteredCampaignWebhooks
+  summary: Path to get registered webhook subscriptions to a specific webhook
   responses:
     '200':
       description: Ok

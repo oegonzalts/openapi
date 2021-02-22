@@ -1,5 +1,6 @@
 post:
   operationId: CreateTest
+  summary: This is a test
   responses:
     '203':
       description: Created annotation

@@ -1,5 +1,6 @@
 get:
-  operationId: Get Webhook Events
+  operationId: GetWebhookEvents
+  summary: Path will retrieve webhook events
   responses:
     '200':
       description: Ok

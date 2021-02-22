@@ -1,5 +1,6 @@
 get:
   operationId: GetTest
+  summary: 'This is a sample test'
   responses:
     '200':
       description: Ok

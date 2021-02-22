@@ -1,5 +1,6 @@
 post:
-  operationId: Testing Endpoint
+  operationId: TestingEndpoint
+  summary: Path is a test endpoint
   responses:
     '200':
       description: Ok
