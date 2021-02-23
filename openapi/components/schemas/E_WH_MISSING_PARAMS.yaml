@@ -1,4 +1,4 @@
-description: Error code for when Webhook request is missing params
+description: Missing params
 properties:
   code:
     type: string
