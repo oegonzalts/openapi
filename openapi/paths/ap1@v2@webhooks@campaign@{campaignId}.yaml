@@ -9,7 +9,7 @@ post:
             $ref: >-
               ../components/schemas/StandardResponse_RegisterCampaignToWebhookResponse_.yaml
     '400':
-      description: ''
+      description: Bad Request
       content:
         application/json:
           schema:

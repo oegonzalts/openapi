@@ -9,7 +9,7 @@ delete:
             $ref: >-
               ../components/schemas/StandardResponse_RemoveWebhookSubscriptionResponse_.yaml
     '400':
-      description: ''
+      description: Bad Request
       content:
         application/json:
           schema:
