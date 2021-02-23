@@ -13,7 +13,9 @@ delete:
       content:
         application/json:
           schema:
-            $ref: ../components/schemas/E_WH_CAMPAIGN_MISSING_SUB.yaml
+            anyOf:
+              - $ref: ../components/schemas/E_WH_MISSING_PARAMS.yaml
+              - $ref: ../components/schemas/E_WH_CAMPAIGN_MISSING_SUB.yaml
     '500':
       description: Internal Server Error
       content:

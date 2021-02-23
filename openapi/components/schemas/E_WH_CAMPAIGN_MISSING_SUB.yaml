@@ -1,12 +1,12 @@
 properties:
   code:
     type: string
-    description: This is a E_WH_CAMPAIGN_MISSING_SUB code
+    description: Returns an application level error code
     example: E_WH_CAMPAIGN_MISSING_SUB
-    default: E_WH_2
+    default: E_WH_CAMPAIGN_MISSING_SUB
   message:
     type: string
-    description: This is a E_WH_CAMPAIGN_MISSING_SUB message
+    description: Represents the error message describing why the response failed
     example: Subscription does not exist for campaign
     default: Subscription does not exist for campaign
   details:

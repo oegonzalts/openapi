@@ -1,11 +1,12 @@
+description: Error code for when Webhook request is missing params
 properties:
   code:
     type: string
-    description: This is a E_WH_MISSING_PARAMS code
+    description: Returns an application level error code
     example: E_WH_MISSING_PARAMS
   message:
     type: string
-    description: This is a E_WH_MISSING_PARAMS message
+    description: Represents the error message describing why the response failed
     example: Missing required parameters. Make sure payload includes required inputs.
   details:
     items: {}

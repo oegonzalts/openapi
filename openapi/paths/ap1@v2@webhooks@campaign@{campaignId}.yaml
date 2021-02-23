@@ -13,7 +13,7 @@ post:
       content:
         application/json:
           schema:
-            $ref: ../components/schemas/ErrorResponse.yaml
+            $ref: ../components/schemas/E_WH_MISSING_PARAMS.yaml
     '422':
       description: Validation Failed
       content:
