@@ -13,19 +13,7 @@ delete:
       content:
         application/json:
           schema:
-            $ref: ../components/schemas/ErrorResponse.yaml
-    '404':
-      description: Resource not found
-      content:
-        application/json:
-          schema:
-            $ref: ../components/schemas/E_RESOURCE_NOT_FOUND_404.yaml
-    '422':
-      description: Validation Failed
-      content:
-        application/json:
-          schema:
-            $ref: ../components/schemas/E_VALIDATION_ERROR_422.yaml
+            $ref: ../components/schemas/E_WH_CAMPAIGN_MISSING_SUB.yaml
     '500':
       description: Internal Server Error
       content:
