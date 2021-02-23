@@ -11,10 +11,6 @@ info:
     email: oscar@ticketsocket.com
 openapi: 3.0.0
 paths:
-  '/ap1/v2/test/{testId}':
-    $ref: 'paths/ap1@v2@test@{testId}.yaml'
-  /ap1/v2/test:
-    $ref: paths/ap1@v2@test.yaml
   /ap1/v2/webhooks/events:
     $ref: paths/ap1@v2@webhooks@events.yaml
   '/ap1/v2/webhooks/campaign/{campaignId}':
