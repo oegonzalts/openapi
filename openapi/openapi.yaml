@@ -11,12 +11,14 @@ info:
     email: oscar@ticketsocket.com
 openapi: 3.0.0
 paths:
-  /ap1/v2/webhooks/events:
-    $ref: paths/ap1@v2@webhooks@events.yaml
-  '/ap1/v2/webhooks/campaign/{campaignId}':
-    $ref: 'paths/ap1@v2@webhooks@campaign@{campaignId}.yaml'
-  '/ap1/v2/webhooks/campaign/{campaignId}/subscription/{webhookSubscriptionId}':
+  /api/v2/auth/token:
+    $ref: paths/api@v2@auth@token.yaml
+  /api/v2/webhooks/events:
+    $ref: paths/api@v2@webhooks@events.yaml
+  '/api/v2/webhooks/campaign/{campaignId}':
+    $ref: 'paths/api@v2@webhooks@campaign@{campaignId}.yaml'
+  '/api/v2/webhooks/campaign/{campaignId}/subscription/{webhookSubscriptionId}':
     $ref: >-
-      paths/ap1@v2@webhooks@campaign@{campaignId}@subscription@{webhookSubscriptionId}.yaml
+      paths/api@v2@webhooks@campaign@{campaignId}@subscription@{webhookSubscriptionId}.yaml
 servers:
   - url: 'https://app.icecreamsocial.io/api/v2'

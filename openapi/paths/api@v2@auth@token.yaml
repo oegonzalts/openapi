@@ -1,0 +1,41 @@
+post:
+  operationId: GetToken
+  responses:
+    '200':
+      description: Ok
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/StandardResponse_TokenResponse_.yaml
+    '400':
+      description: Bad Request
+      content:
+        application/json:
+          schema:
+            anyOf:
+              - $ref: ../components/schemas/E_AUTH_BAD_IP.yaml
+              - $ref: ../components/schemas/E_AUTH_DISABLED_USER.yaml
+    '404':
+      description: Not Found
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/E_RESOURCE_NOT_FOUND_404.yaml
+    '500':
+      description: Internal Server Error
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/E_SERVER_ERROR_500.yaml
+  description: Retrieves a token to be able to request authenticated api calls
+  summary: Get Token
+  tags:
+    - Authentication
+  security: []
+  parameters: []
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/TokenBody.yaml

@@ -1,0 +1,10 @@
+properties:
+  info: {}
+  user: {}
+  token:
+    type: string
+required:
+  - info
+  - user
+  - token
+type: object
