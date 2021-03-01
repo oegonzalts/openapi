@@ -1,0 +1,23 @@
+properties:
+  code:
+    type: string
+    description: Returns an application level error code
+  message:
+    type: string
+    description: Represents the error message describing why the response failed
+  details:
+    items: {}
+    type: array
+    description: Returns extra details about why the response failed
+    default: []
+  success:
+    type: boolean
+    description: Returns whether the response was successful or not
+    default: false
+required:
+  - code
+  - message
+  - details
+  - success
+type: object
+additionalProperties: false

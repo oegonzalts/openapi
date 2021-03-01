@@ -1,0 +1,23 @@
+properties:
+  TestType:
+    anyOf:
+      - $ref: ./TestAffiliate.yaml
+      - $ref: ./TestClient.yaml
+      - $ref: ./TestAdmin.yaml
+  email:
+    type: string
+    description: The email the TestUser used to register his account
+  name:
+    type: string
+  id:
+    type: string
+required:
+  - email
+  - name
+  - id
+type: object
+description: |-
+  TestUser objects allow you to associate actions performed
+  in the system with the TestUser that performed them.
+  The TestUser object contains common information across
+  every TestUser in the system regardless of status and role.

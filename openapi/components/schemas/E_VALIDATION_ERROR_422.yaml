@@ -1,0 +1,27 @@
+properties:
+  code:
+    type: string
+    description: Validation error code
+    example: E_VALIDATION_ERROR_422
+    default: E_VALIDATION_ERROR_422
+  message:
+    type: string
+    description: Validation error message
+    example: There is a validation error from provided input.
+    default: There is a validation error from provided input.
+  details:
+    items: {}
+    type: array
+    description: Returns extra details about why the response failed
+    default: []
+  success:
+    type: boolean
+    description: Returns whether the response was successful or not
+    default: false
+required:
+  - code
+  - message
+  - details
+  - success
+type: object
+additionalProperties: false

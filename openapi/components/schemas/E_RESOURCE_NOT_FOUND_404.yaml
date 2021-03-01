@@ -1,0 +1,27 @@
+properties:
+  code:
+    type: string
+    description: Not found error code
+    example: RESOURCE_NOT_FOUND_404
+    default: RESOURCE_NOT_FOUND_404
+  message:
+    type: string
+    description: Not found error message
+    example: Resource not found.
+    default: Resource not found.
+  details:
+    items: {}
+    type: array
+    description: Returns extra details about why the response failed
+    default: []
+  success:
+    type: boolean
+    description: Returns whether the response was successful or not
+    default: false
+required:
+  - code
+  - message
+  - details
+  - success
+type: object
+additionalProperties: false

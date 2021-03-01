@@ -1,0 +1,9 @@
+properties:
+  creationId:
+    type: string
+  id:
+    type: string
+required:
+  - creationId
+  - id
+type: object
