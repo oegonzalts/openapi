@@ -1,8 +1,0 @@
-properties:
-  events:
-    items:
-      $ref: ./WebhookEventType.yaml
-    type: array
-required:
-  - events
-type: object
