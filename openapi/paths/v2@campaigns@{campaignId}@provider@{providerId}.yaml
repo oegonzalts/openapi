@@ -1,19 +1,12 @@
-post:
-  operationId: CreateInfluencer
+get:
+  operationId: GetProviderScript
   responses:
     '200':
       description: Ok
       content:
         application/json:
           schema:
-            $ref: >-
-              ../components/schemas/StandardResponse_InfluencerCreatedResponse_.yaml
-    '400':
-      description: Bad Request
-      content:
-        application/json:
-          schema:
-            $ref: ../components/schemas/E_BAD_REQUEST_400.yaml
+            $ref: ../components/schemas/StandardResponse_any_.yaml
     '404':
       description: Not Found
       content:
@@ -27,20 +20,18 @@ post:
           schema:
             $ref: ../components/schemas/E_SERVER_ERROR_500.yaml
   description: Long description
-  summary: Title
+  summary: Short title of api call
   tags:
-    - Client
+    - Influencers
   security: []
   parameters:
-    - description: campaign ID
-      in: path
+    - in: path
       name: campaignId
       required: true
       schema:
         type: string
-  requestBody:
-    required: true
-    content:
-      application/json:
-        schema:
-          $ref: ../components/schemas/CreateInfluencerBody.yaml
+    - in: path
+      name: providerId
+      required: true
+      schema:
+        type: string

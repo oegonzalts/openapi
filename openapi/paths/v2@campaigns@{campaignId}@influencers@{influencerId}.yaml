@@ -1,5 +1,5 @@
 get:
-  operationId: GetAffiliateById
+  operationId: GetInfluencer
   responses:
     '200':
       description: Ok
@@ -7,13 +7,13 @@ get:
         application/json:
           schema:
             $ref: >-
-              ../components/schemas/StandardResponse_GetAffiliatByIdResponse_.yaml
-    '403':
-      description: Forbidden
+              ../components/schemas/StandardResponse_GetInfluencerByIdResponse_.yaml
+    '400':
+      description: Bad Request
       content:
         application/json:
           schema:
-            $ref: ../components/schemas/E_FORBIDDEN_403.yaml
+            $ref: ../components/schemas/E_BAD_REQUEST_400.yaml
     '404':
       description: Not Found
       content:
@@ -26,58 +26,26 @@ get:
         application/json:
           schema:
             $ref: ../components/schemas/E_SERVER_ERROR_500.yaml
-  description: Get information of a single affiliate by affiliate ID
-  summary: Get Affiliate by ID
+  description: Get information of an influencer by camapaign and influencer ID
+  summary: Get Influencer by ID
   tags:
-    - Affiliates
+    - Influencers
   security: []
   parameters:
-    - in: path
-      name: affiliateId
+    - description: Campaign ID
+      in: path
+      name: campaignId
       required: true
       schema:
         type: string
-delete:
-  operationId: DeleteAffiliate
-  responses:
-    '200':
-      description: Ok
-      content:
-        application/json:
-          schema:
-            $ref: >-
-              ../components/schemas/StandardResponse_DeleteAffiliateResponse_.yaml
-    '403':
-      description: Forbidden
-      content:
-        application/json:
-          schema:
-            $ref: ../components/schemas/E_FORBIDDEN_403.yaml
-    '404':
-      description: Not Found
-      content:
-        application/json:
-          schema:
-            $ref: ../components/schemas/E_RESOURCE_NOT_FOUND_404.yaml
-    '500':
-      description: Internal Server Error
-      content:
-        application/json:
-          schema:
-            $ref: ../components/schemas/E_SERVER_ERROR_500.yaml
-  description: Delete an Affiliate
-  summary: Delete an Affiliate
-  tags:
-    - Affiliates
-  security: []
-  parameters:
-    - in: path
-      name: affiliateId
+    - description: Infleuncer ID
+      in: path
+      name: influencerId
       required: true
       schema:
         type: string
 put:
-  operationId: UpdateAffiliate
+  operationId: UpdateInfluencer
   responses:
     '200':
       description: Ok
@@ -85,13 +53,51 @@ put:
         application/json:
           schema:
             $ref: >-
-              ../components/schemas/StandardResponse_UpdateAffiliateResponse_.yaml
-    '403':
-      description: Forbidden
+              ../components/schemas/StandardResponse_UpdateInfluencerResponse_.yaml
+    '400':
+      description: Bad Request
       content:
         application/json:
           schema:
-            $ref: ../components/schemas/E_FORBIDDEN_403.yaml
+            $ref: ../components/schemas/E_BAD_REQUEST_400.yaml
+    '500':
+      description: Internal Server Error
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/E_SERVER_ERROR_500.yaml
+  description: Update information on an Influencer with a campaign ID and influencer ID
+  summary: Update Influencer
+  tags:
+    - Influencers
+  security: []
+  parameters:
+    - in: path
+      name: campaignId
+      required: true
+      schema:
+        type: string
+    - in: path
+      name: influencerId
+      required: true
+      schema:
+        type: string
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/CreateInfluencerBody.yaml
+delete:
+  operationId: DeleteInfluencer
+  responses:
+    '200':
+      description: Ok
+      content:
+        application/json:
+          schema:
+            $ref: >-
+              ../components/schemas/StandardResponse_DeleteInfluencerResponse_.yaml
     '404':
       description: Not Found
       content:
@@ -104,14 +110,19 @@ put:
         application/json:
           schema:
             $ref: ../components/schemas/E_SERVER_ERROR_500.yaml
-  description: Update an Affiliate
-  summary: Update an Affiliate
+  description: Delete Influencer from a campagin
+  summary: Delete Influencer
   tags:
-    - Affiliates
+    - Influencers
   security: []
   parameters:
     - in: path
-      name: affiliateId
+      name: campaignId
+      required: true
+      schema:
+        type: string
+    - in: path
+      name: influencerId
       required: true
       schema:
         type: string

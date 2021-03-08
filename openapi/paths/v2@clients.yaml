@@ -1,14 +1,18 @@
 post:
   operationId: CreateClient
   responses:
+    '200':
+      description: Ok
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/StandardResponse_CreateClientResponse_.yaml
     '201':
       description: Created
       content:
         application/json:
           schema:
             $ref: ../components/schemas/StandardResponse_CreateClientResponse_.yaml
-    '204':
-      description: No content
     '404':
       description: Bad Request
       content:

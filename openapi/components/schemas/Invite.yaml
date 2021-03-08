@@ -1,0 +1,61 @@
+properties:
+  type:
+    $ref: ./InviteType.yaml
+  name:
+    type: string
+  identifier:
+    type: string
+  email:
+    type: string
+  influencerId:
+    type: number
+    format: double
+  id:
+    type: number
+    format: double
+  createdAt:
+    type: string
+    format: date-time
+  updatedAt:
+    type: string
+    format: date-time
+  shareMessage:
+    type: string
+  redirectUrl:
+    type: string
+  convertedRevenue:
+    type: number
+    format: double
+  hasConversion:
+    type: boolean
+  campaignId:
+    type: number
+    format: double
+  inviteClickCount:
+    type: number
+    format: double
+  resendAfterDate:
+    type: string
+    format: date-time
+  inviteResendsRemaining:
+    type: number
+    format: double
+required:
+  - type
+  - name
+  - identifier
+  - email
+  - influencerId
+  - id
+  - createdAt
+  - updatedAt
+  - shareMessage
+  - redirectUrl
+  - convertedRevenue
+  - hasConversion
+  - campaignId
+  - inviteClickCount
+  - resendAfterDate
+  - inviteResendsRemaining
+type: object
+additionalProperties: false

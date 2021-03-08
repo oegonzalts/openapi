@@ -1,5 +1,5 @@
 post:
-  operationId: CreateAffiliate
+  operationId: CreateInvitesFb
   responses:
     '200':
       description: Ok
@@ -7,13 +7,13 @@ post:
         application/json:
           schema:
             $ref: >-
-              ../components/schemas/StandardResponse_CreateAffiliateResponse_.yaml
-    '403':
-      description: Forbidden
+              ../components/schemas/StandardResponse_InfluencerCreatedResponse_.yaml
+    '400':
+      description: Bad Request
       content:
         application/json:
           schema:
-            $ref: ../components/schemas/E_FORBIDDEN_403.yaml
+            $ref: ../components/schemas/E_BAD_REQUEST_400.yaml
     '404':
       description: Not Found
       content:
@@ -26,15 +26,20 @@ post:
         application/json:
           schema:
             $ref: ../components/schemas/E_SERVER_ERROR_500.yaml
-  description: Create an Affiliate
-  summary: Create an Affiliate
+  description: Long description
+  summary: Title
   tags:
-    - Affiliates
+    - Client
   security: []
-  parameters: []
+  parameters:
+    - in: path
+      name: campaignId
+      required: true
+      schema:
+        type: string
   requestBody:
     required: true
     content:
       application/json:
         schema:
-          $ref: ../components/schemas/CreateAffiliateBody.yaml
+          $ref: ../components/schemas/CreateFbInviteBody.yaml

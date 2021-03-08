@@ -1,5 +1,5 @@
 post:
-  operationId: CreateInfluencer
+  operationId: CreateManualConversion
   responses:
     '200':
       description: Ok
@@ -7,34 +7,32 @@ post:
         application/json:
           schema:
             $ref: >-
-              ../components/schemas/StandardResponse_InfluencerCreatedResponse_.yaml
+              ../components/schemas/StandardResponse_CreateManualConversionResposne_.yaml
     '400':
       description: Bad Request
       content:
         application/json:
           schema:
             $ref: ../components/schemas/E_BAD_REQUEST_400.yaml
-    '404':
-      description: Not Found
-      content:
-        application/json:
-          schema:
-            $ref: ../components/schemas/E_RESOURCE_NOT_FOUND_404.yaml
     '500':
       description: Internal Server Error
       content:
         application/json:
           schema:
             $ref: ../components/schemas/E_SERVER_ERROR_500.yaml
-  description: Long description
-  summary: Title
+  description: Create Manual Conversion
+  summary: Create Manual Conversion
   tags:
-    - Client
+    - Influencers
   security: []
   parameters:
-    - description: campaign ID
-      in: path
+    - in: path
       name: campaignId
+      required: true
+      schema:
+        type: string
+    - in: path
+      name: influencerId
       required: true
       schema:
         type: string
@@ -43,4 +41,4 @@ post:
     content:
       application/json:
         schema:
-          $ref: ../components/schemas/CreateInfluencerBody.yaml
+          $ref: ../components/schemas/CreateManualConversionBody.yaml

@@ -1,0 +1,17 @@
+properties:
+  data:
+    $ref: ./GetInfluencerByIdResponse.yaml
+    description: Holds main response data
+  message:
+    type: string
+    description: Returns a message about the response
+  success:
+    type: boolean
+    description: Returns whether the response was successful or not
+    example: true
+    default: true
+required:
+  - data
+  - message
+type: object
+additionalProperties: false

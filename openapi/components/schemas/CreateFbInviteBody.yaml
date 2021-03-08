@@ -1,0 +1,28 @@
+properties:
+  items:
+    items:
+      properties:
+        identifier:
+          type: string
+        name:
+          type: string
+      required:
+        - identifier
+        - name
+      type: object
+    type: array
+  redirectUrl:
+    type: string
+  shareMessage:
+    type: string
+  identifier:
+    type: string
+  name:
+    type: string
+required:
+  - items
+  - redirectUrl
+  - shareMessage
+  - identifier
+  - name
+type: object

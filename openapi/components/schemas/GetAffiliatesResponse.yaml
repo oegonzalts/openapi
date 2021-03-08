@@ -1,0 +1,8 @@
+properties:
+  affiliates:
+    items:
+      $ref: ./Affiliate.yaml
+    type: array
+required:
+  - affiliates
+type: object
