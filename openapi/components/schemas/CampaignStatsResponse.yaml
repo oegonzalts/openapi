@@ -1,0 +1,6 @@
+properties:
+  stats:
+    $ref: ./CampaignStats.yaml
+required:
+  - stats
+type: object

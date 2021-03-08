@@ -1,0 +1,35 @@
+post:
+  operationId: CreateClient
+  responses:
+    '201':
+      description: Created
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/StandardResponse_CreateClientResponse_.yaml
+    '204':
+      description: No content
+    '404':
+      description: Bad Request
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/E_BAD_REQUEST_400.yaml
+    '500':
+      description: Internal Server Error
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/E_SERVER_ERROR_500.yaml
+  description: Create client
+  summary: Create client
+  tags:
+    - Clients
+  security: []
+  parameters: []
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/CreateClientBody.yaml

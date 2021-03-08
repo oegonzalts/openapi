@@ -15,7 +15,7 @@ post:
           schema:
             $ref: ../components/schemas/E_WH_MISSING_PARAMS.yaml
     '422':
-      description: Validation Failed
+      description: Body Validation Failed
       content:
         application/json:
           schema:

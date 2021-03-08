@@ -1,0 +1,8 @@
+properties:
+  clients:
+    items:
+      $ref: ./Client.yaml
+    type: array
+required:
+  - clients
+type: object

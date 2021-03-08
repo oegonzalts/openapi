@@ -11,14 +11,44 @@ info:
     email: oscar@ticketsocket.com
 openapi: 3.0.0
 paths:
-  /auth/token:
-    $ref: paths/auth@token.yaml
-  /webhooks/events:
-    $ref: paths/webhooks@events.yaml
-  '/webhooks/campaign/{campaignId}':
-    $ref: 'paths/webhooks@campaign@{campaignId}.yaml'
-  '/webhooks/campaign/{campaignId}/subscription/{webhookSubscriptionId}':
+  '/api/v2/affiliates/{affiliateId}':
+    $ref: 'paths/api@v2@affiliates@{affiliateId}.yaml'
+  /api/v2/affiliates/nested-affiliates:
+    $ref: paths/api@v2@affiliates@nested-affiliates.yaml
+  /api/v2/affiliates:
+    $ref: paths/api@v2@affiliates.yaml
+  /api/v2/token:
+    $ref: paths/api@v2@token.yaml
+  '/api/v2/clients/{clientId}':
+    $ref: 'paths/api@v2@clients@{clientId}.yaml'
+  /api/v2/clients/nested-clients:
+    $ref: paths/api@v2@clients@nested-clients.yaml
+  /api/v2/clients:
+    $ref: paths/api@v2@clients.yaml
+  '/api/v2/clients/regenPublicKey/{clientId}':
+    $ref: 'paths/api@v2@clients@regenPublicKey@{clientId}.yaml'
+  '/api/v2/client/campaigns/{campaignId}':
+    $ref: 'paths/api@v2@client@campaigns@{campaignId}.yaml'
+  '/api/v2/client/campaigns/{campaignId}/influencers':
+    $ref: 'paths/api@v2@client@campaigns@{campaignId}@influencers.yaml'
+  '/api/v2/users/{{userId}}':
+    $ref: 'paths/api@v2@users@{{userId}}.yaml'
+  /api/v2/users:
+    $ref: paths/api@v2@users.yaml
+  /api/v2/users/nested-users:
+    $ref: paths/api@v2@users@nested-users.yaml
+  '/api/v2/users/{userId}':
+    $ref: 'paths/api@v2@users@{userId}.yaml'
+  /api/v2/users/stats-overview:
+    $ref: paths/api@v2@users@stats-overview.yaml
+  /api/v2/users/daily-stats:
+    $ref: paths/api@v2@users@daily-stats.yaml
+  /api/v2/webhooks/events:
+    $ref: paths/api@v2@webhooks@events.yaml
+  '/api/v2/webhooks/campaign/{campaignId}':
+    $ref: 'paths/api@v2@webhooks@campaign@{campaignId}.yaml'
+  '/api/v2/webhooks/campaign/{campaignId}/subscription/{webhookSubscriptionId}':
     $ref: >-
-      paths/webhooks@campaign@{campaignId}@subscription@{webhookSubscriptionId}.yaml
+      paths/api@v2@webhooks@campaign@{campaignId}@subscription@{webhookSubscriptionId}.yaml
 servers:
-  - url: 'https://dev.icecreamsocial.io/api/v2'
+  - url: 'https://dev.icecreamsocial.io/'

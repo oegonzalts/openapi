@@ -1,0 +1,83 @@
+get:
+  operationId: GetNestedClients
+  responses:
+    '200':
+      description: Ok
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/StandardResponse_GetClientsResponse_.yaml
+    '204':
+      description: No content
+    '404':
+      description: Not Found
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/E_RESOURCE_NOT_FOUND_404.yaml
+    '500':
+      description: Internal Server Error
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/E_SERVER_ERROR_500.yaml
+  description: Get information of a single client by client ID
+  summary: Get Client by ID
+  tags:
+    - Clients
+  security: []
+  parameters:
+    - description: >-
+        The required affiliate id used as root to retrieve hierarchy of user
+        belonging to affiliateId or to its tree of sub-affiliates
+      in: query
+      name: affiliateId
+      required: true
+      schema:
+        type: string
+    - description: >-
+        Takes search text that will be used to search among users first name,
+        last name, and email
+      in: query
+      name: searchText
+      required: false
+      schema:
+        type: string
+    - description: >-
+        Affiliate id to filter for among hierarchy of possible users with
+        different affiliate ids
+      in: query
+      name: affiliateFilterId
+      required: false
+      schema:
+        type: string
+    - description: Client id to filter for among group of possible users
+      in: query
+      name: clientFilterId
+      required: false
+      schema:
+        type: string
+    - description: Optional user field to order users by (default order is ascending )
+      in: query
+      name: orderField
+      required: false
+      schema:
+        type: string
+    - description: Optional order by field either Asc or desc (ascending or descending)
+      in: query
+      name: orderBy
+      required: false
+      schema:
+        type: string
+    - description: Optional status field
+      in: query
+      name: status
+      required: false
+      schema:
+        type: string
+    - description: Optional boolean to filter by archived users
+      in: query
+      name: isArchived
+      required: false
+      schema:
+        type: string

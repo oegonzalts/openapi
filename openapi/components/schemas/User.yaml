@@ -1,0 +1,69 @@
+properties:
+  firstName:
+    type: string
+  lastName:
+    type: string
+  company:
+    type: string
+  email:
+    type: string
+  password:
+    type: string
+  id:
+    type: number
+    format: double
+  createdAt:
+    type: string
+    format: date-time
+  updatedAt:
+    type: string
+    format: date-time
+  isTeamAdmin:
+    type: boolean
+  role:
+    $ref: ./UserRole.yaml
+  affiliateId:
+    type: number
+    format: double
+  clientId:
+    type: number
+    format: double
+  status:
+    $ref: ./UserStatus.yaml
+  isArchived:
+    type: boolean
+  initialFailedLogin:
+    type: number
+    format: double
+  lastFailedLogin:
+    type: number
+    format: double
+  failedLoginCount:
+    type: number
+    format: double
+  ip:
+    type: string
+  stateParameter:
+    type: string
+required:
+  - firstName
+  - lastName
+  - company
+  - email
+  - password
+  - id
+  - createdAt
+  - updatedAt
+  - isTeamAdmin
+  - role
+  - affiliateId
+  - clientId
+  - status
+  - isArchived
+  - initialFailedLogin
+  - lastFailedLogin
+  - failedLoginCount
+  - ip
+  - stateParameter
+type: object
+additionalProperties: false

@@ -1,0 +1,102 @@
+get:
+  operationId: GetClientById
+  responses:
+    '200':
+      description: Ok
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/StandardResponse_GetClientByIdResponse_.yaml
+    '204':
+      description: No content
+    '404':
+      description: Not Found
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/E_RESOURCE_NOT_FOUND_404.yaml
+    '500':
+      description: Internal Server Error
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/E_SERVER_ERROR_500.yaml
+  description: Get clients by filter
+  summary: Get nested clients
+  tags:
+    - Clients
+  security: []
+  parameters:
+    - in: path
+      name: clientId
+      required: true
+      schema:
+        type: string
+delete:
+  operationId: DeleteClient
+  responses:
+    '200':
+      description: Ok
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/StandardResponse_DeleteClientResponse_.yaml
+    '204':
+      description: No content
+    '404':
+      description: Bad Request
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/E_BAD_REQUEST_400.yaml
+    '500':
+      description: Internal Server Error
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/E_SERVER_ERROR_500.yaml
+  description: Delete client
+  summary: Delete client
+  tags:
+    - Clients
+  security: []
+  parameters:
+    - in: path
+      name: clientId
+      required: true
+      schema:
+        type: string
+put:
+  operationId: UpdateClient
+  responses:
+    '200':
+      description: Ok
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/StandardResponse_UpdateClientResponse_.yaml
+    '204':
+      description: No content
+    '404':
+      description: Bad Request
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/E_BAD_REQUEST_400.yaml
+    '500':
+      description: Internal Server Error
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/E_SERVER_ERROR_500.yaml
+  description: Update client
+  summary: Update client
+  tags:
+    - Clients
+  security: []
+  parameters:
+    - in: path
+      name: clientId
+      required: true
+      schema:
+        type: string

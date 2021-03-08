@@ -1,0 +1,110 @@
+properties:
+  name:
+    type: string
+  fromEmail:
+    type: string
+  emailSubject:
+    type: string
+  active:
+    type: boolean
+  conversionGoal:
+    type: number
+    format: double
+  offerHeading:
+    type: string
+  offerInstruction:
+    type: string
+  shareMessage:
+    type: string
+  thankYouImage: {}
+  redirectUrl:
+    type: string
+  offerImage:
+    type: string
+  userId:
+    type: string
+  id:
+    type: string
+  createdAt:
+    type: string
+    format: date-time
+  updatedAt:
+    type: string
+    format: date-time
+  thankYouImageMobile: {}
+  offerImageMobile: {}
+  shareImage: {}
+  shareTitle:
+    type: string
+  locale:
+    type: string
+  offerImageCaption:
+    type: string
+  shareVideo: {}
+  clientId:
+    type: string
+  maskInfo:
+    type: string
+  isArchived:
+    type: boolean
+  emailNote:
+    type: string
+  status:
+    $ref: ./CampaignStatus.yaml
+  termsAndConditionsURL:
+    type: string
+  privacyPolicyURL:
+    type: string
+  refundFullAmount:
+    type: number
+    format: double
+  refundAmount:
+    type: number
+    format: double
+  useCardFlexRefund:
+    type: boolean
+  cardFlexManualRefund:
+    type: boolean
+  giftCardAmount:
+    type: number
+    format: double
+  automaticRewardProcessing:
+    type: boolean
+required:
+  - name
+  - fromEmail
+  - emailSubject
+  - active
+  - conversionGoal
+  - offerHeading
+  - offerInstruction
+  - shareMessage
+  - thankYouImage
+  - redirectUrl
+  - offerImage
+  - userId
+  - id
+  - createdAt
+  - updatedAt
+  - thankYouImageMobile
+  - offerImageMobile
+  - shareImage
+  - shareTitle
+  - locale
+  - offerImageCaption
+  - shareVideo
+  - clientId
+  - maskInfo
+  - isArchived
+  - emailNote
+  - status
+  - termsAndConditionsURL
+  - privacyPolicyURL
+  - refundFullAmount
+  - refundAmount
+  - useCardFlexRefund
+  - cardFlexManualRefund
+  - giftCardAmount
+  - automaticRewardProcessing
+type: object
+additionalProperties: false

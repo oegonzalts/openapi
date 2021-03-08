@@ -1,0 +1,27 @@
+properties:
+  totalUtilizationRate:
+    type: number
+    format: double
+  totalConversions:
+    type: number
+    format: double
+  totalUtilizedInfluencers:
+    type: number
+    format: double
+  totalInfluencers:
+    type: number
+    format: double
+  totalRevenue:
+    type: number
+    format: double
+  totalInvitesClicked:
+    type: number
+    format: double
+required:
+  - totalUtilizationRate
+  - totalConversions
+  - totalUtilizedInfluencers
+  - totalInfluencers
+  - totalRevenue
+  - totalInvitesClicked
+type: object

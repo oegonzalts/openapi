@@ -1,0 +1,30 @@
+properties:
+  name:
+    type: string
+  createdAt:
+    type: string
+    format: date-time
+  updatedAt:
+    type: string
+    format: date-time
+  status:
+    $ref: ./ClientStatus.yaml
+  isArchived:
+    type: boolean
+  affiliateId:
+    type: string
+  publicKey:
+    type: string
+  regenKey:
+    type: string
+required:
+  - name
+  - createdAt
+  - updatedAt
+  - status
+  - isArchived
+  - affiliateId
+  - publicKey
+  - regenKey
+type: object
+description: 'From T, pick a set of properties whose keys are in the union K'

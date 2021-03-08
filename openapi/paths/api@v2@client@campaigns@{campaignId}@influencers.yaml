@@ -1,0 +1,41 @@
+get:
+  operationId: CreateInfluencer
+  responses:
+    '200':
+      description: Ok
+      content:
+        application/json:
+          schema:
+            $ref: >-
+              ../components/schemas/StandardResponse_GetCampaignByIdResponse_.yaml
+    '204':
+      description: No content
+    '400':
+      description: Bad Request
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/E_BAD_REQUEST_400.yaml
+    '404':
+      description: Not Found
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/E_RESOURCE_NOT_FOUND_404.yaml
+    '500':
+      description: Internal Server Error
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/E_SERVER_ERROR_500.yaml
+  description: Long description
+  summary: Title
+  tags:
+    - Client
+  security: []
+  parameters:
+    - in: path
+      name: campaignId
+      required: true
+      schema:
+        type: string

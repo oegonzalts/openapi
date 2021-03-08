@@ -1,20 +1,21 @@
-post:
-  operationId: GetToken
+get:
+  operationId: GetCampaign
   responses:
     '200':
       description: Ok
       content:
         application/json:
           schema:
-            $ref: ../components/schemas/StandardResponse_TokenResponse_.yaml
+            $ref: >-
+              ../components/schemas/StandardResponse_GetCampaignByIdResponse_.yaml
+    '204':
+      description: No content
     '400':
       description: Bad Request
       content:
         application/json:
           schema:
-            anyOf:
-              - $ref: ../components/schemas/E_AUTH_BAD_IP.yaml
-              - $ref: ../components/schemas/E_AUTH_DISABLED_USER.yaml
+            $ref: ../components/schemas/E_BAD_REQUEST_400.yaml
     '404':
       description: Not Found
       content:
@@ -27,15 +28,14 @@ post:
         application/json:
           schema:
             $ref: ../components/schemas/E_SERVER_ERROR_500.yaml
-  description: Retrieves a token to be able to request authenticated api calls
-  summary: Get Token
+  description: Public call to get a campaign's information
+  summary: Get Campaign
   tags:
-    - Authentication
+    - Client
   security: []
-  parameters: []
-  requestBody:
-    required: true
-    content:
-      application/json:
-        schema:
-          $ref: ../components/schemas/TokenBody.yaml
+  parameters:
+    - in: path
+      name: campaignId
+      required: true
+      schema:
+        type: string

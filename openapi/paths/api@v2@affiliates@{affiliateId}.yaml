@@ -1,0 +1,123 @@
+get:
+  operationId: GetAffiliateById
+  responses:
+    '200':
+      description: Ok
+      content:
+        application/json:
+          schema:
+            $ref: >-
+              ../components/schemas/StandardResponse_GetAffiliatByIdResponse_.yaml
+    '204':
+      description: No content
+    '403':
+      description: Forbidden
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/E_FORBIDDEN_403.yaml
+    '404':
+      description: Not Found
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/E_RESOURCE_NOT_FOUND_404.yaml
+    '500':
+      description: Internal Server Error
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/E_SERVER_ERROR_500.yaml
+  description: Get information of a single affiliate by affiliate ID
+  summary: Get Affiliate by ID
+  tags:
+    - Affiliates
+  security: []
+  parameters:
+    - in: path
+      name: affiliateId
+      required: true
+      schema:
+        type: string
+delete:
+  operationId: DeleteAffiliate
+  responses:
+    '200':
+      description: Ok
+      content:
+        application/json:
+          schema:
+            $ref: >-
+              ../components/schemas/StandardResponse_DeleteAffiliateResponse_.yaml
+    '204':
+      description: No content
+    '403':
+      description: Forbidden
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/E_FORBIDDEN_403.yaml
+    '404':
+      description: Not Found
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/E_RESOURCE_NOT_FOUND_404.yaml
+    '500':
+      description: Internal Server Error
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/E_SERVER_ERROR_500.yaml
+  description: Delete an Affiliate
+  summary: Delete an Affiliate
+  tags:
+    - Affiliates
+  security: []
+  parameters:
+    - in: path
+      name: affiliateId
+      required: true
+      schema:
+        type: string
+put:
+  operationId: UpdateAffiliate
+  responses:
+    '200':
+      description: Ok
+      content:
+        application/json:
+          schema:
+            $ref: >-
+              ../components/schemas/StandardResponse_UpdateAffiliateResponse_.yaml
+    '204':
+      description: No content
+    '403':
+      description: Forbidden
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/E_FORBIDDEN_403.yaml
+    '404':
+      description: Not Found
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/E_RESOURCE_NOT_FOUND_404.yaml
+    '500':
+      description: Internal Server Error
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/E_SERVER_ERROR_500.yaml
+  description: Update an Affiliate
+  summary: Update an Affiliate
+  tags:
+    - Affiliates
+  security: []
+  parameters:
+    - in: path
+      name: affiliateId
+      required: true
+      schema:
+        type: string

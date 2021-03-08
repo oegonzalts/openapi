@@ -1,0 +1,6 @@
+properties:
+  campaign:
+    $ref: ./Campaign.yaml
+required:
+  - campaign
+type: object
