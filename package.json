@@ -9,8 +9,10 @@
     "start": "openapi preview-docs",
     "build": "openapi bundle -o dist",
     "join-generated-docs": "openapi split /Users/oegonzal/Dev/ICS/ics-api/build/swagger.json --outDir openapi",
+    "join-generated-docs-yong": "openapi split /Users/oegonzal/Dev/ICS/ics-api/build/swagger.json --outDir openapi",
     "lint": "openapi lint openapi/openapi.yaml",
     "test": "openapi lint",
-    "refresh": "rm -Rf openapi/ ; npm run join-generated-docs; git add .; git commit -m 'Adding more annotations'; git push;"
+    "refresh": "rm -Rf openapi/ ; npm run join-generated-docs; git add .; git commit -m 'Adding more annotations'; git push;",
+    "refresh2": "rm -Rf openapi/ ; npm run join-generated-docs-yong; git add .; git commit -m 'Adding more annotations'; git push;"
   }
 }
