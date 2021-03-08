@@ -1,5 +1,5 @@
 get:
-  operationId: GetCampaign
+  operationId: GetCampaignFromClient
   responses:
     '200':
       description: Ok

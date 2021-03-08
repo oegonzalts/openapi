@@ -1,5 +1,5 @@
 post:
-  operationId: CreateInfluencer
+  operationId: CreateInfluencerFromClient
   responses:
     '200':
       description: Ok
