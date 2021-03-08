@@ -31,8 +31,6 @@ paths:
     $ref: 'paths/api@v2@client@campaigns@{campaignId}.yaml'
   '/api/v2/client/campaigns/{campaignId}/influencers':
     $ref: 'paths/api@v2@client@campaigns@{campaignId}@influencers.yaml'
-  '/api/v2/users/{{userId}}':
-    $ref: 'paths/api@v2@users@{{userId}}.yaml'
   /api/v2/users:
     $ref: paths/api@v2@users.yaml
   /api/v2/users/nested-users:
