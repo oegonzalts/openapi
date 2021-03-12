@@ -1,0 +1,35 @@
+get:
+  operationId: GetWebhookEvents
+  responses:
+    '200':
+      description: Ok
+      content:
+        application/json:
+          schema:
+            $ref: >-
+              ../components/schemas/StandardResponse_GetWebhookEventsResponse_.yaml
+          examples:
+            Example 1:
+              value:
+                data:
+                  events:
+                    - id: 1
+                      eventName: order_conversion
+                      createdAt: '2021-02-19T02:18:23.342Z'
+                      isActive: true
+                message: Webhook event types retrieved.
+                success: true
+    '500':
+      description: Internal Server Error
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/E_SERVER_ERROR_500.yaml
+  description: |-
+    Retrieves system wide events that can trigger webhooks and can 
+    be subscribed to.
+  summary: Get Webhook Events
+  tags:
+    - Webhooks
+  security: []
+  parameters: []

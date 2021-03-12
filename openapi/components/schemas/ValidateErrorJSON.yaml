@@ -1,0 +1,15 @@
+properties:
+  message:
+    type: string
+    enum:
+      - Validation failed
+    nullable: false
+  details:
+    properties: {}
+    additionalProperties: {}
+    type: object
+required:
+  - message
+  - details
+type: object
+additionalProperties: false

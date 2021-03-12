@@ -1,0 +1,10 @@
+properties:
+  desc:
+    type: string
+    description: This is an Testclient TestUser
+  id:
+    type: string
+required:
+  - desc
+  - id
+type: object

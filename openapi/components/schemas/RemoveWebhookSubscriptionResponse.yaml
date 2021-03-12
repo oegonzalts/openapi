@@ -1,0 +1,16 @@
+properties:
+  subscription:
+    $ref: ./WebhookSubscription.yaml
+    example:
+      id: '1'
+      webhookUrl: www.example-site.com/api/v1/webhooks
+      assignment_AssignmentTypeId: '2'
+      assignment_ItemId: 4
+      webhookEventTypeId: conversion
+      webhookSecret: xxxxxxxxxxxx
+      isActive: true
+      createdAt: '2021-02-19T02:30:18.392Z'
+required:
+  - subscription
+type: object
+description: Example of RemoveWebhookSubscriptionResponse
