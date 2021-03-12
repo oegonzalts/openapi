@@ -1,0 +1,39 @@
+properties:
+  campaigns:
+    items:
+      $ref: ./Campaign.yaml
+    type: array
+  campaignsHash:
+    properties: {}
+    type: object
+  totalInvitesClicked:
+    type: number
+    format: double
+  totalRevenue:
+    type: number
+    format: double
+  totalConversions:
+    type: number
+    format: double
+  totalUtilizationRate:
+    type: number
+    format: double
+  totalUtilizedInfluencers:
+    type: number
+    format: double
+  totalInfluencers:
+    type: number
+    format: double
+  date:
+    type: string
+required:
+  - campaigns
+  - campaignsHash
+  - totalInvitesClicked
+  - totalRevenue
+  - totalConversions
+  - totalUtilizationRate
+  - totalUtilizedInfluencers
+  - totalInfluencers
+  - date
+type: object

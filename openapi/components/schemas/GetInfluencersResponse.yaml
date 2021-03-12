@@ -1,0 +1,8 @@
+properties:
+  influencers:
+    items:
+      $ref: ./Influencer.yaml
+    type: array
+required:
+  - influencers
+type: object

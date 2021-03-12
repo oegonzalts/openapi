@@ -1,0 +1,16 @@
+properties:
+  name:
+    type: string
+  revenue:
+    type: string
+  email:
+    type: string
+  identifier:
+    type: string
+  orderId:
+    type: string
+required:
+  - name
+  - email
+  - orderId
+type: object

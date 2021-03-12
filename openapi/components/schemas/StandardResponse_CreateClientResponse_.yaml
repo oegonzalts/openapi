@@ -1,6 +1,6 @@
 properties:
   data:
-    $ref: ./GetCampaignRegisteredWebhooksResponse.yaml
+    $ref: ./CreateClientResponse.yaml
     description: Holds main response data
   message:
     type: string

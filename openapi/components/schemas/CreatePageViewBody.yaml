@@ -1,0 +1,9 @@
+properties:
+  referrer:
+    type: string
+  passBack:
+    type: boolean
+required:
+  - referrer
+  - passBack
+type: object

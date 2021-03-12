@@ -1,0 +1,82 @@
+get:
+  operationId: GetUsers
+  responses:
+    '200':
+      description: Ok
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/StandardResponse_GetUsersResponse_.yaml
+    '204':
+      description: No content
+    '400':
+      description: Bad Request
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/E_BAD_REQUEST_400.yaml
+    '500':
+      description: Internal Server Error
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/E_SERVER_ERROR_500.yaml
+  description: Retrieves list of admin users
+  summary: Get admin users
+  tags:
+    - Users
+  security: []
+  parameters:
+    - description: The upper limit of user items to return (capped at 100)
+      in: query
+      name: limit
+      required: false
+      schema:
+        type: string
+post:
+  operationId: CreateUser
+  responses:
+    '200':
+      description: Ok
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/StandardResponse_CreateUserResponse_.yaml
+    '204':
+      description: No content
+    '400':
+      description: Bad Request
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/E_BAD_REQUEST_400.yaml
+    '403':
+      description: Forbidden
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/E_FORBIDDEN_403.yaml
+    '422':
+      description: Body Validation Failed
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/E_VALIDATION_ERROR_422.yaml
+    '500':
+      description: Internal Server Error
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/E_SERVER_ERROR_500.yaml
+  description: Creates an amdin user
+  summary: Creates admin user
+  tags:
+    - Users
+  security: []
+  parameters: []
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/User.yaml

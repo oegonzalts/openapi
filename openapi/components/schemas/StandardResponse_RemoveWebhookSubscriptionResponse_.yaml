@@ -9,9 +9,9 @@ properties:
     type: boolean
     description: Returns whether the response was successful or not
     example: true
+    default: true
 required:
   - data
   - message
-  - success
 type: object
 additionalProperties: false

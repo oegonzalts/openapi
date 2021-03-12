@@ -1,0 +1,82 @@
+get:
+  operationId: GetNestedAffiliates
+  responses:
+    '200':
+      description: Ok
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/StandardResponse_GetAffiliatesResponse_.yaml
+    '403':
+      description: Forbidden
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/E_FORBIDDEN_403.yaml
+    '404':
+      description: Ok
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/E_RESOURCE_NOT_FOUND_404.yaml
+    '500':
+      description: Internal Server Error
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/E_SERVER_ERROR_500.yaml
+  description: >-
+    This request will return all the hierarchy of affiliates belonging to the
+    logged in user's affiliate. This call is used to see which affliates cna be
+    managed with your current access.
+  summary: Get nested Affiliates by the provided affiliate ID.
+  tags:
+    - Affiliates
+  security: []
+  parameters:
+    - description: >-
+        Affiliate ID used as root to retrieve hierarchy of affiliates belonging
+        to affiliateId or to its tree of sub-affiliates
+      in: query
+      name: affiliateId
+      required: true
+      schema:
+        type: string
+    - description: >-
+        Root Affiliate ID from which to get nested affiliates to filter
+        retrieved affiliattes
+      in: query
+      name: parentAffiliateId
+      required: false
+      schema:
+        type: string
+    - description: The search text that will be used to filter by affiliate naname
+      in: query
+      name: searchText
+      required: false
+      schema:
+        type: string
+    - description: User field to order users by (default order is ascending)
+      in: query
+      name: orderField
+      required: false
+      schema:
+        type: string
+    - description: Order by field either "asc" or "desc" (ascending or descending)
+      in: query
+      name: orderBy
+      required: false
+      schema:
+        type: string
+    - description: Filter by status of the affiliates ("active" or "disabled")
+      in: query
+      name: status
+      required: false
+      schema:
+        type: string
+    - description: Boolean to filter by archived users
+      in: query
+      name: isArchived
+      required: false
+      schema:
+        type: string

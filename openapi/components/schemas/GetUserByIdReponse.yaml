@@ -1,0 +1,6 @@
+properties:
+  user:
+    $ref: ./User.yaml
+required:
+  - user
+type: object

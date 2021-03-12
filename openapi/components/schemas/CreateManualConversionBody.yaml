@@ -1,0 +1,7 @@
+properties:
+  revenue:
+    type: number
+    format: double
+required:
+  - revenue
+type: object

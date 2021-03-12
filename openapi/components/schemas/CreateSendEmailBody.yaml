@@ -1,0 +1,21 @@
+properties:
+  fromEmail:
+    type: string
+  subject:
+    type: string
+  imageUrl:
+    type: string
+  shareMessage:
+    type: string
+  message:
+    type: string
+  title:
+    type: string
+required:
+  - fromEmail
+  - subject
+  - imageUrl
+  - shareMessage
+  - message
+  - title
+type: object

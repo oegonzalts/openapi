@@ -1,0 +1,42 @@
+post:
+  operationId: ProcessInfluencer
+  responses:
+    '200':
+      description: Ok
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/StandardResponse_any_.yaml
+    '404':
+      description: Not Found
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/E_RESOURCE_NOT_FOUND_404.yaml
+    '500':
+      description: Internal Server Error
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/E_SERVER_ERROR_500.yaml
+  description: Get information of an influencer by camapaign and influencer ID.
+  summary: Process Influencer
+  tags:
+    - Influencers
+  security: []
+  parameters:
+    - in: path
+      name: campaignId
+      required: true
+      schema:
+        type: string
+    - in: path
+      name: influencerId
+      required: true
+      schema:
+        type: string
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema: {}

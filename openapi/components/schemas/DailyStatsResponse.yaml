@@ -1,0 +1,8 @@
+properties:
+  items:
+    items:
+      $ref: ./DateHashStatsFormat.yaml
+    type: array
+required:
+  - items
+type: object
