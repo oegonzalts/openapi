@@ -1,6 +1,0 @@
-properties:
-  conversion:
-    $ref: ./Conversion.yaml
-required:
-  - conversion
-type: object

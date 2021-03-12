@@ -1,6 +1,0 @@
-properties:
-  client:
-    $ref: ./Client.yaml
-required:
-  - client
-type: object

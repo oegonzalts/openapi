@@ -1,4 +1,0 @@
-type: string
-enum:
-  - order_conversion
-nullable: false
