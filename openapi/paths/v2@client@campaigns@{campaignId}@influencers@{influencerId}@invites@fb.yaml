@@ -38,6 +38,12 @@ post:
       required: true
       schema:
         type: string
+    - description: influencer ID
+      in: path
+      name: influencerId
+      required: true
+      schema:
+        type: string
   requestBody:
     required: true
     content:

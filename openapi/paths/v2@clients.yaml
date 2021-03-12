@@ -28,7 +28,7 @@ post:
   description: Create a client
   summary: Create client
   tags:
-    - Clients
+    - Customer
   security: []
   parameters: []
   requestBody:

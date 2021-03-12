@@ -22,7 +22,7 @@ get:
   description: Get clients by filter
   summary: Get nested clients
   tags:
-    - Clients
+    - Customer
   security: []
   parameters:
     - in: path
@@ -54,7 +54,7 @@ delete:
   description: Delete a client
   summary: Delete client
   tags:
-    - Clients
+    - Customer
   security: []
   parameters:
     - in: path
@@ -86,7 +86,7 @@ put:
   description: Update a client
   summary: Update client
   tags:
-    - Clients
+    - Customer
   security: []
   parameters:
     - in: path

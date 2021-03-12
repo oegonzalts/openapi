@@ -23,7 +23,7 @@ put:
   description: Regenerate public key for a client
   summary: Regenerate Public Key
   tags:
-    - Clients
+    - Customer
   security: []
   parameters:
     - in: path

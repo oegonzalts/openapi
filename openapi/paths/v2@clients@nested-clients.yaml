@@ -22,7 +22,7 @@ get:
   description: Get information of a single client by client ID
   summary: Get Client by ID
   tags:
-    - Clients
+    - Customer
   security: []
   parameters:
     - description: >-
