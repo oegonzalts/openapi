@@ -27,8 +27,10 @@ get:
           schema:
             $ref: ../components/schemas/E_SERVER_ERROR_500.yaml
   description: >-
-    Get information of a single affiliate by affiliate ID. The retrieved
-    affiliate must belong to the loggined in user's hierarchy of affiliate.
+    Get information of a single affiliate by **affiliateId** . 
+
+    The retrieved affiliate must belong to the logged in user's hierarchy of
+    affiliate.
   summary: Get Affiliate by ID
   tags:
     - Affiliates
@@ -68,7 +70,7 @@ delete:
           schema:
             $ref: ../components/schemas/E_SERVER_ERROR_500.yaml
   description: >-
-    This request will delete the target affiliate if you have the access do
+    This request will delete the target affiliate if you have the access to
     manage it.
   summary: Delete an Affiliate
   tags:

@@ -27,8 +27,14 @@ post:
         application/json:
           schema:
             $ref: ../components/schemas/E_SERVER_ERROR_500.yaml
-  description: Retrieves a token to be able to request authenticated api calls
-  summary: Get Token
+  description: >-
+    Retrieves an authorization token to be able to request authenticated api
+    calls.
+
+    If you do not have ICS credentials, please visit
+    https://icecreamsocial.io/get-started/ to get a free trial or contact a
+    member of ICS customer success team directly.
+  summary: Get Auhtorization Token
   tags:
     - Authentication
   security: []

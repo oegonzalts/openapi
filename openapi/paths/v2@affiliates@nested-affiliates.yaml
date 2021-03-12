@@ -27,9 +27,11 @@ get:
             $ref: ../components/schemas/E_SERVER_ERROR_500.yaml
   description: >-
     This request will return all the hierarchy of affiliates belonging to the
-    logged in user's affiliate. This call is used to see which affliates cna be
-    managed with your current access.
-  summary: Get nested Affiliates by the provided affiliate ID.
+    logged in user's affiliate. 
+
+    This call is used to see which affliates can be managed with your current
+    access.
+  summary: Get Nested Affiliates by Affiliate ID.
   tags:
     - Affiliates
   security: []

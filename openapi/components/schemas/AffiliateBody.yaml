@@ -1,15 +1,14 @@
 properties:
-  name:
-    type: string
   parentId:
+    type: string
+  name:
     type: string
   status:
     $ref: ./AffiliateStatus.yaml
   isArchived:
     type: boolean
 required:
+  - parentId
   - name
-  - status
-  - isArchived
 type: object
 additionalProperties: false

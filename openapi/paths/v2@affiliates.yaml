@@ -28,8 +28,10 @@ post:
             $ref: ../components/schemas/E_SERVER_ERROR_500.yaml
   description: >-
     This request will create an affiliate under the provided parent affiliate
-    ID. Once new affiliate is created, you may create new users or new
-    orgnazation structures (affiliate or client) under it.
+    ID. 
+
+    Once new affiliate is created, you may create new users or new orgnazation
+    structures (affiliate or client) under it.
   summary: Create an Affiliate
   tags:
     - Affiliates
