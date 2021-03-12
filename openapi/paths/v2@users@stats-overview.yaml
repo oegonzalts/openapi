@@ -21,7 +21,7 @@ get:
 
     Note: if no filtering params are provided, default behavior will be for
     response to give campaign stats of campaigns mapped to user making call
-  summary: Get Campaign Overview Stats
+  summary: Get Campaign Overview Statistics
   tags:
     - Users
   security: []

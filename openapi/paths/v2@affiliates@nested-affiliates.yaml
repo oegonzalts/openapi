@@ -38,40 +38,38 @@ get:
       schema:
         type: string
     - description: >-
-        The required affiliate id used as root to retrieve hierarchy of user
+        (Required) Affiliate id used as root to retrieve hierarchy of user
         belonging to affiliateId or to its tree of sub-affiliates
       in: query
       name: affiliateId
       required: true
       schema:
         type: string
-    - description: >-
-        Takes search text that will be used to search among users first name,
-        last name, and email
+    - description: The search text that will be used to filter by affiliate naname
       in: query
       name: searchText
       required: false
       schema:
         type: string
-    - description: Optional user field to order users by (default order is ascending )
+    - description: User field to order users by (default order is ascending)
       in: query
       name: orderField
       required: false
       schema:
         type: string
-    - description: Optional order by field either Asc or desc (ascending or descending)
+    - description: Order by field either "asc" or "desc" (ascending or descending)
       in: query
       name: orderBy
       required: false
       schema:
         type: string
-    - description: Optional status field
+    - description: Filter by status of the affiliates ("active" or "disabled")
       in: query
       name: status
       required: false
       schema:
         type: string
-    - description: Optional boolean to filter by archived users
+    - description: Boolean to filter by archived users
       in: query
       name: isArchived
       required: false

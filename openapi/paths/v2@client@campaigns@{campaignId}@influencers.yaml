@@ -26,8 +26,8 @@ post:
         application/json:
           schema:
             $ref: ../components/schemas/E_SERVER_ERROR_500.yaml
-  description: Long description
-  summary: Title
+  description: Create an influencer for a campaign
+  summary: Create influencer
   tags:
     - Client
   security: []

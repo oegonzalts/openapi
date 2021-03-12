@@ -79,8 +79,9 @@ paths:
     $ref: 'paths/v2@client@campaigns@{campaignId}.yaml'
   '/v2/client/campaigns/{campaignId}/influencers':
     $ref: 'paths/v2@client@campaigns@{campaignId}@influencers.yaml'
-  '/v2/client/campaigns/{campaignId}/influencers/invites/fb':
-    $ref: 'paths/v2@client@campaigns@{campaignId}@influencers@invites@fb.yaml'
+  '/v2/client/campaigns/{campaignId}/influencers/{influencerId}/invites/fb':
+    $ref: >-
+      paths/v2@client@campaigns@{campaignId}@influencers@{influencerId}@invites@fb.yaml
   '/v2/client/campaigns/{campaignId}/influencers/{influencerId}/invites/generic':
     $ref: >-
       paths/v2@client@campaigns@{campaignId}@influencers@{influencerId}@invites@generic.yaml
@@ -89,8 +90,6 @@ paths:
       paths/v2@client@campaigns@{campaignId}@influencers@{influencerId}@invites@gm.yaml
   '/v2/client/campaigns/{campaignId}/email':
     $ref: 'paths/v2@client@campaigns@{campaignId}@email.yaml'
-  /v2/client/campaigns/pageView:
-    $ref: paths/v2@client@campaigns@pageView.yaml
   '/v2/users/{userId}':
     $ref: 'paths/v2@users@{userId}.yaml'
   /v2/users:

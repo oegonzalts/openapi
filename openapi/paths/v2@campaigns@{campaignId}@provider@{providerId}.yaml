@@ -19,8 +19,8 @@ get:
         application/json:
           schema:
             $ref: ../components/schemas/E_SERVER_ERROR_500.yaml
-  description: Long description
-  summary: Short title of api call
+  description: Get ICS script by integration platform method
+  summary: Get ICS script by integration platform method
   tags:
     - Influencers
   security: []

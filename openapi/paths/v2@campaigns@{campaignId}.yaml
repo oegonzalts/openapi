@@ -19,8 +19,8 @@ get:
         application/json:
           schema:
             $ref: ../components/schemas/E_SERVER_ERROR_500.yaml
-  description: Long description
-  summary: Short title of api call
+  description: Get a campaign's information by campaign ID
+  summary: Get campaign by ID
   tags:
     - Influencers
   security: []
@@ -51,8 +51,8 @@ put:
         application/json:
           schema:
             $ref: ../components/schemas/E_SERVER_ERROR_500.yaml
-  description: Long description
-  summary: Short title of api call
+  description: Update a campaign's information
+  summary: Update campaign
   tags:
     - Influencers
   security: []
@@ -83,8 +83,8 @@ delete:
         application/json:
           schema:
             $ref: ../components/schemas/E_SERVER_ERROR_500.yaml
-  description: Long description
-  summary: Short title of api call
+  description: Delete a campaign
+  summary: Delete campaign
   tags:
     - Influencers
   security: []

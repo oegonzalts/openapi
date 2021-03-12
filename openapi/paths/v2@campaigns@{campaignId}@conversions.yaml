@@ -19,8 +19,8 @@ get:
         application/json:
           schema:
             $ref: ../components/schemas/E_SERVER_ERROR_500.yaml
-  description: Long description
-  summary: Short title of api call
+  description: Get all conversions of a campaign
+  summary: Get conversions of a campaign
   tags:
     - Influencers
   security: []

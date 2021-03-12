@@ -51,7 +51,7 @@ delete:
         application/json:
           schema:
             $ref: ../components/schemas/E_SERVER_ERROR_500.yaml
-  description: Delete client
+  description: Delete a client
   summary: Delete client
   tags:
     - Clients
@@ -83,7 +83,7 @@ put:
         application/json:
           schema:
             $ref: ../components/schemas/E_SERVER_ERROR_500.yaml
-  description: Update client
+  description: Update a client
   summary: Update client
   tags:
     - Clients

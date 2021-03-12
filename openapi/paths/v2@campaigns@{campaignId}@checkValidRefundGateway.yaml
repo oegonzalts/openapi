@@ -19,8 +19,8 @@ get:
         application/json:
           schema:
             $ref: ../components/schemas/E_SERVER_ERROR_500.yaml
-  description: Long description
-  summary: Short title of api call
+  description: Check if refund processor is valid before processing influencer reward
+  summary: Refund gateway verification
   tags:
     - Influencers
   security: []

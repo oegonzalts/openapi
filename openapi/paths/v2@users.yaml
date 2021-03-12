@@ -21,8 +21,8 @@ get:
         application/json:
           schema:
             $ref: ../components/schemas/E_SERVER_ERROR_500.yaml
-  description: Retrieves list of users
-  summary: Get Users
+  description: Retrieves list of admin users
+  summary: Get admin users
   tags:
     - Users
   security: []
@@ -68,8 +68,8 @@ post:
         application/json:
           schema:
             $ref: ../components/schemas/E_SERVER_ERROR_500.yaml
-  description: Creates a user
-  summary: Creates a user
+  description: Creates an amdin user
+  summary: Creates admin user
   tags:
     - Users
   security: []

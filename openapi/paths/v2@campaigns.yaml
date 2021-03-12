@@ -46,8 +46,8 @@ post:
         application/json:
           schema:
             $ref: ../components/schemas/E_SERVER_ERROR_500.yaml
-  description: Long description
-  summary: Short title of api call
+  description: Create an Icecream Social campaign
+  summary: Create campaign
   tags:
     - Influencers
   security: []

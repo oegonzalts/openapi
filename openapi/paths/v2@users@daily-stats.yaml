@@ -16,7 +16,7 @@ get:
           schema:
             $ref: ../components/schemas/E_SERVER_ERROR_500.yaml
   description: Get daily statistics of a specified campaign or all campaigns.
-  summary: Get Daily Campaign Stats
+  summary: Get Daily Campaign Statistics
   tags:
     - Users
   security: []

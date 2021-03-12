@@ -20,7 +20,7 @@ post:
         application/json:
           schema:
             $ref: ../components/schemas/E_SERVER_ERROR_500.yaml
-  description: Create Manual Conversion
+  description: Create a manual conversion foe testing or admin related purpose
   summary: Create Manual Conversion
   tags:
     - Influencers

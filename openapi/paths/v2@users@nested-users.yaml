@@ -22,11 +22,14 @@ get:
         application/json:
           schema:
             $ref: ../components/schemas/E_SERVER_ERROR_500.yaml
-  description: |-
-    Retrieves list of users that are nested within the provided affiliate id
+  description: >-
+    Retrieves list of admin users that are nested within the provided affiliate
+    id
+
     and its nested sub-affiliates. This call is recursive and will return all 
+
     users within the hierarchy of the provided affiliate id.
-  summary: Get nested users by affiliate ID
+  summary: Get nested admin users by affiliate ID
   tags:
     - Users
   security: []

@@ -26,19 +26,19 @@ post:
         application/json:
           schema:
             $ref: ../components/schemas/E_SERVER_ERROR_500.yaml
-  description: Long description
-  summary: Title
+  description: Create a generic invite for an influencer
+  summary: Create generic invite
   tags:
     - Client
   security: []
   parameters:
-    - description: the campaign ID
+    - description: campaign ID
       in: path
       name: campaignId
       required: true
       schema:
         type: string
-    - description: the influencer ID
+    - description: influencer ID
       in: path
       name: influencerId
       required: true

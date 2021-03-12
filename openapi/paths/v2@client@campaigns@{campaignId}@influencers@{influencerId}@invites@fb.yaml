@@ -26,13 +26,14 @@ post:
         application/json:
           schema:
             $ref: ../components/schemas/E_SERVER_ERROR_500.yaml
-  description: Long description
-  summary: Title
+  description: Create a facebook invite for an influencer
+  summary: Create Facebook invite
   tags:
     - Client
   security: []
   parameters:
-    - in: path
+    - description: campaign ID
+      in: path
       name: campaignId
       required: true
       schema:

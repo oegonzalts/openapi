@@ -65,7 +65,7 @@ post:
         application/json:
           schema:
             $ref: ../components/schemas/E_SERVER_ERROR_500.yaml
-  description: Updates a user
+  description: Updates an admin user
   summary: Updates a user
   tags:
     - Users

@@ -20,7 +20,7 @@ put:
         application/json:
           schema:
             $ref: ../components/schemas/E_SERVER_ERROR_500.yaml
-  description: Regenerate Public Key for Client
+  description: Regenerate public key for a client
   summary: Regenerate Public Key
   tags:
     - Clients

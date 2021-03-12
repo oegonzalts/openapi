@@ -29,7 +29,7 @@ get:
           schema:
             $ref: ../components/schemas/E_SERVER_ERROR_500.yaml
   description: Public call to get a campaign's information
-  summary: Get Campaign
+  summary: Get campaign information
   tags:
     - Client
   security: []

@@ -26,8 +26,8 @@ post:
         application/json:
           schema:
             $ref: ../components/schemas/E_SERVER_ERROR_500.yaml
-  description: Long description
-  summary: Title
+  description: Send email to an influencer with invite information
+  summary: Send email to influencer
   tags:
     - Client
   security: []
