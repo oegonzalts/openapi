@@ -25,31 +25,24 @@ get:
         application/json:
           schema:
             $ref: ../components/schemas/E_SERVER_ERROR_500.yaml
-  description: >-
-    This request will return all the hierarchy of affiliates belonging to the
-    logged in user's affiliate. 
-
-    This call is used to see which affliates can be managed with your current
-    access.
-  summary: Get Nested Affiliates by Affiliate ID.
+  description: Get all sub-affiliates of an affiliaate
+  summary: Get nested Affiliates by affiliate ID
   tags:
     - Affiliates
   security: []
   parameters:
-    - description: >-
-        Affiliate ID used as root to retrieve hierarchy of affiliates belonging
-        to affiliateId or to its tree of sub-affiliates
+    - description: Root Affiliate ID from which to get nested affiliates
       in: query
-      name: affiliateId
+      name: parentAffiliateId
       required: true
       schema:
         type: string
     - description: >-
-        Root Affiliate ID from which to get nested affiliates to filter
-        retrieved affiliattes
+        (Required) Affiliate id used as root to retrieve hierarchy of user
+        belonging to affiliateId or to its tree of sub-affiliates
       in: query
-      name: parentAffiliateId
-      required: false
+      name: affiliateId
+      required: true
       schema:
         type: string
     - description: The search text that will be used to filter by affiliate naname

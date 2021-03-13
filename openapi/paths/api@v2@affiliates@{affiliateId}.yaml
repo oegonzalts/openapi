@@ -26,11 +26,7 @@ get:
         application/json:
           schema:
             $ref: ../components/schemas/E_SERVER_ERROR_500.yaml
-  description: >-
-    Get information of a single affiliate by **affiliateId** . 
-
-    The retrieved affiliate must belong to the logged in user's hierarchy of
-    affiliate.
+  description: Get information of a single affiliate by affiliate ID
   summary: Get Affiliate by ID
   tags:
     - Affiliates
@@ -69,9 +65,7 @@ delete:
         application/json:
           schema:
             $ref: ../components/schemas/E_SERVER_ERROR_500.yaml
-  description: >-
-    This request will delete the target affiliate if you have the access to
-    manage it.
+  description: Delete an Affiliate
   summary: Delete an Affiliate
   tags:
     - Affiliates
@@ -110,9 +104,7 @@ put:
         application/json:
           schema:
             $ref: ../components/schemas/E_SERVER_ERROR_500.yaml
-  description: >-
-    This request will update the target affiliate if you have the access do
-    manage it.
+  description: Update an Affiliate
   summary: Update an Affiliate
   tags:
     - Affiliates
@@ -123,9 +115,3 @@ put:
       required: true
       schema:
         type: string
-  requestBody:
-    required: true
-    content:
-      application/json:
-        schema:
-          $ref: ../components/schemas/CreateAffiliateBody.yaml
