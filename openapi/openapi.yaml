@@ -11,101 +11,102 @@ info:
     email: oscar@ticketsocket.com
 openapi: 3.0.0
 paths:
-  '/v2/affiliates/{affiliateId}':
-    $ref: 'paths/v2@affiliates@{affiliateId}.yaml'
-  /v2/affiliates/nested-affiliates:
-    $ref: paths/v2@affiliates@nested-affiliates.yaml
-  /v2/affiliates:
-    $ref: paths/v2@affiliates.yaml
-  /v2/auth/token:
-    $ref: paths/v2@auth@token.yaml
-  '/v2/campaigns/{campaignId}/influencers':
-    $ref: 'paths/v2@campaigns@{campaignId}@influencers.yaml'
-  '/v2/campaigns/{campaignId}/influencers/export':
-    $ref: 'paths/v2@campaigns@{campaignId}@influencers@export.yaml'
-  '/v2/campaigns/{campaignId}/influencers/{influencerId}':
-    $ref: 'paths/v2@campaigns@{campaignId}@influencers@{influencerId}.yaml'
-  '/v2/campaigns/{campaignId}/influencers/{influencerId}/processInfluencer':
+  '/api/v2/affiliates/{affiliateId}':
+    $ref: 'paths/api@v2@affiliates@{affiliateId}.yaml'
+  /api/v2/affiliates/nested-affiliates:
+    $ref: paths/api@v2@affiliates@nested-affiliates.yaml
+  /api/v2/affiliates:
+    $ref: paths/api@v2@affiliates.yaml
+  /api/v2/auth/token:
+    $ref: paths/api@v2@auth@token.yaml
+  '/api/v2/campaigns/{campaignId}/influencers':
+    $ref: 'paths/api@v2@campaigns@{campaignId}@influencers.yaml'
+  '/api/v2/campaigns/{campaignId}/influencers/export':
+    $ref: 'paths/api@v2@campaigns@{campaignId}@influencers@export.yaml'
+  '/api/v2/campaigns/{campaignId}/influencers/{influencerId}':
+    $ref: 'paths/api@v2@campaigns@{campaignId}@influencers@{influencerId}.yaml'
+  '/api/v2/campaigns/{campaignId}/influencers/{influencerId}/processInfluencer':
     $ref: >-
-      paths/v2@campaigns@{campaignId}@influencers@{influencerId}@processInfluencer.yaml
-  '/v2/campaigns/{campaignId}/influencers/{influencerId}/invites':
-    $ref: 'paths/v2@campaigns@{campaignId}@influencers@{influencerId}@invites.yaml'
-  '/v2/campaigns/{campaignId}/influencers/{influencerId}/conversions':
+      paths/api@v2@campaigns@{campaignId}@influencers@{influencerId}@processInfluencer.yaml
+  '/api/v2/campaigns/{campaignId}/influencers/{influencerId}/invites':
     $ref: >-
-      paths/v2@campaigns@{campaignId}@influencers@{influencerId}@conversions.yaml
-  '/v2/campaigns/{campaignId}/influencers/{influencerId}/invites/{inviteId}':
+      paths/api@v2@campaigns@{campaignId}@influencers@{influencerId}@invites.yaml
+  '/api/v2/campaigns/{campaignId}/influencers/{influencerId}/conversions':
     $ref: >-
-      paths/v2@campaigns@{campaignId}@influencers@{influencerId}@invites@{inviteId}.yaml
-  '/v2/campaigns/{campaignId}/influencers/{influencerId}/invites/{inviteId}/conversions':
+      paths/api@v2@campaigns@{campaignId}@influencers@{influencerId}@conversions.yaml
+  '/api/v2/campaigns/{campaignId}/influencers/{influencerId}/invites/{inviteId}':
     $ref: >-
-      paths/v2@campaigns@{campaignId}@influencers@{influencerId}@invites@{inviteId}@conversions.yaml
-  '/v2/campaigns/{campaignId}/influencers/{influencerId}/invites/influencedConversions':
+      paths/api@v2@campaigns@{campaignId}@influencers@{influencerId}@invites@{inviteId}.yaml
+  '/api/v2/campaigns/{campaignId}/influencers/{influencerId}/invites/{inviteId}/conversions':
     $ref: >-
-      paths/v2@campaigns@{campaignId}@influencers@{influencerId}@invites@influencedConversions.yaml
-  '/v2/campaigns/{campaignId}/influencers/{influencerId}/conversions/{conversionId}':
+      paths/api@v2@campaigns@{campaignId}@influencers@{influencerId}@invites@{inviteId}@conversions.yaml
+  '/api/v2/campaigns/{campaignId}/influencers/{influencerId}/invites/influencedConversions':
     $ref: >-
-      paths/v2@campaigns@{campaignId}@influencers@{influencerId}@conversions@{conversionId}.yaml
-  '/v2/campaigns/{campaignId}/influencers/{influencerId}/cardFlexRefund':
+      paths/api@v2@campaigns@{campaignId}@influencers@{influencerId}@invites@influencedConversions.yaml
+  '/api/v2/campaigns/{campaignId}/influencers/{influencerId}/conversions/{conversionId}':
     $ref: >-
-      paths/v2@campaigns@{campaignId}@influencers@{influencerId}@cardFlexRefund.yaml
-  '/v2/campaigns/{campaignId}/influencers/{influencerId}/createManualConversion':
+      paths/api@v2@campaigns@{campaignId}@influencers@{influencerId}@conversions@{conversionId}.yaml
+  '/api/v2/campaigns/{campaignId}/influencers/{influencerId}/cardFlexRefund':
     $ref: >-
-      paths/v2@campaigns@{campaignId}@influencers@{influencerId}@createManualConversion.yaml
-  /v2/campaigns/issueSquareGiftCard:
-    $ref: paths/v2@campaigns@issueSquareGiftCard.yaml
-  /v2/campaigns/nested:
-    $ref: paths/v2@campaigns@nested.yaml
-  /v2/campaigns:
-    $ref: paths/v2@campaigns.yaml
-  '/v2/campaigns/{campaignId}':
-    $ref: 'paths/v2@campaigns@{campaignId}.yaml'
-  '/v2/campaigns/{campaignId}/conversions':
-    $ref: 'paths/v2@campaigns@{campaignId}@conversions.yaml'
-  '/v2/campaigns/{campaignId}/checkValidRefundGateway':
-    $ref: 'paths/v2@campaigns@{campaignId}@checkValidRefundGateway.yaml'
-  '/v2/campaigns/{campaignId}/checkInfluencerProcessing':
-    $ref: 'paths/v2@campaigns@{campaignId}@checkInfluencerProcessing.yaml'
-  '/v2/campaigns/{campaignId}/provider/{providerId}':
-    $ref: 'paths/v2@campaigns@{campaignId}@provider@{providerId}.yaml'
-  '/v2/clients/{clientId}':
-    $ref: 'paths/v2@clients@{clientId}.yaml'
-  /v2/clients/nested-clients:
-    $ref: paths/v2@clients@nested-clients.yaml
-  /v2/clients:
-    $ref: paths/v2@clients.yaml
-  '/v2/clients/regenPublicKey/{clientId}':
-    $ref: 'paths/v2@clients@regenPublicKey@{clientId}.yaml'
-  '/v2/client/campaigns/{campaignId}':
-    $ref: 'paths/v2@client@campaigns@{campaignId}.yaml'
-  '/v2/client/campaigns/{campaignId}/influencers':
-    $ref: 'paths/v2@client@campaigns@{campaignId}@influencers.yaml'
-  '/v2/client/campaigns/{campaignId}/influencers/{influencerId}/invites/fb':
+      paths/api@v2@campaigns@{campaignId}@influencers@{influencerId}@cardFlexRefund.yaml
+  '/api/v2/campaigns/{campaignId}/influencers/{influencerId}/createManualConversion':
     $ref: >-
-      paths/v2@client@campaigns@{campaignId}@influencers@{influencerId}@invites@fb.yaml
-  '/v2/client/campaigns/{campaignId}/influencers/{influencerId}/invites/generic':
+      paths/api@v2@campaigns@{campaignId}@influencers@{influencerId}@createManualConversion.yaml
+  /api/v2/campaigns/issueSquareGiftCard:
+    $ref: paths/api@v2@campaigns@issueSquareGiftCard.yaml
+  /api/v2/campaigns/nested:
+    $ref: paths/api@v2@campaigns@nested.yaml
+  /api/v2/campaigns:
+    $ref: paths/api@v2@campaigns.yaml
+  '/api/v2/campaigns/{campaignId}':
+    $ref: 'paths/api@v2@campaigns@{campaignId}.yaml'
+  '/api/v2/campaigns/{campaignId}/conversions':
+    $ref: 'paths/api@v2@campaigns@{campaignId}@conversions.yaml'
+  '/api/v2/campaigns/{campaignId}/checkValidRefundGateway':
+    $ref: 'paths/api@v2@campaigns@{campaignId}@checkValidRefundGateway.yaml'
+  '/api/v2/campaigns/{campaignId}/checkInfluencerProcessing':
+    $ref: 'paths/api@v2@campaigns@{campaignId}@checkInfluencerProcessing.yaml'
+  '/api/v2/campaigns/{campaignId}/provider/{providerId}':
+    $ref: 'paths/api@v2@campaigns@{campaignId}@provider@{providerId}.yaml'
+  '/api/v2/clients/{clientId}':
+    $ref: 'paths/api@v2@clients@{clientId}.yaml'
+  /api/v2/clients/nested-clients:
+    $ref: paths/api@v2@clients@nested-clients.yaml
+  /api/v2/clients:
+    $ref: paths/api@v2@clients.yaml
+  '/api/v2/clients/regenPublicKey/{clientId}':
+    $ref: 'paths/api@v2@clients@regenPublicKey@{clientId}.yaml'
+  '/api/v2/client/campaigns/{campaignId}':
+    $ref: 'paths/api@v2@client@campaigns@{campaignId}.yaml'
+  '/api/v2/client/campaigns/{campaignId}/influencers':
+    $ref: 'paths/api@v2@client@campaigns@{campaignId}@influencers.yaml'
+  '/api/v2/client/campaigns/{campaignId}/influencers/{influencerId}/invites/fb':
     $ref: >-
-      paths/v2@client@campaigns@{campaignId}@influencers@{influencerId}@invites@generic.yaml
-  '/v2/client/campaigns/{campaignId}/influencers/{influencerId}/invites/gm':
+      paths/api@v2@client@campaigns@{campaignId}@influencers@{influencerId}@invites@fb.yaml
+  '/api/v2/client/campaigns/{campaignId}/influencers/{influencerId}/invites/generic':
     $ref: >-
-      paths/v2@client@campaigns@{campaignId}@influencers@{influencerId}@invites@gm.yaml
-  '/v2/client/campaigns/{campaignId}/email':
-    $ref: 'paths/v2@client@campaigns@{campaignId}@email.yaml'
-  '/v2/users/{userId}':
-    $ref: 'paths/v2@users@{userId}.yaml'
-  /v2/users:
-    $ref: paths/v2@users.yaml
-  /v2/users/nested-users:
-    $ref: paths/v2@users@nested-users.yaml
-  /v2/users/stats-overview:
-    $ref: paths/v2@users@stats-overview.yaml
-  /v2/users/daily-stats:
-    $ref: paths/v2@users@daily-stats.yaml
-  /v2/webhooks/events:
-    $ref: paths/v2@webhooks@events.yaml
-  '/v2/webhooks/campaign/{campaignId}':
-    $ref: 'paths/v2@webhooks@campaign@{campaignId}.yaml'
-  '/v2/webhooks/campaign/{campaignId}/subscription/{webhookSubscriptionId}':
+      paths/api@v2@client@campaigns@{campaignId}@influencers@{influencerId}@invites@generic.yaml
+  '/api/v2/client/campaigns/{campaignId}/influencers/{influencerId}/invites/gm':
     $ref: >-
-      paths/v2@webhooks@campaign@{campaignId}@subscription@{webhookSubscriptionId}.yaml
+      paths/api@v2@client@campaigns@{campaignId}@influencers@{influencerId}@invites@gm.yaml
+  '/api/v2/client/campaigns/{campaignId}/email':
+    $ref: 'paths/api@v2@client@campaigns@{campaignId}@email.yaml'
+  '/api/v2/users/{userId}':
+    $ref: 'paths/api@v2@users@{userId}.yaml'
+  /api/v2/users:
+    $ref: paths/api@v2@users.yaml
+  /api/v2/users/nested-users:
+    $ref: paths/api@v2@users@nested-users.yaml
+  /api/v2/users/stats-overview:
+    $ref: paths/api@v2@users@stats-overview.yaml
+  /api/v2/users/daily-stats:
+    $ref: paths/api@v2@users@daily-stats.yaml
+  /api/v2/webhooks/events:
+    $ref: paths/api@v2@webhooks@events.yaml
+  '/api/v2/webhooks/campaign/{campaignId}':
+    $ref: 'paths/api@v2@webhooks@campaign@{campaignId}.yaml'
+  '/api/v2/webhooks/campaign/{campaignId}/subscription/{webhookSubscriptionId}':
+    $ref: >-
+      paths/api@v2@webhooks@campaign@{campaignId}@subscription@{webhookSubscriptionId}.yaml
 servers:
   - url: 'https://dev.icecreamsocial.io/api'
