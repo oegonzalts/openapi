@@ -1,6 +1,8 @@
 properties:
   name:
     type: string
+  affiliateId:
+    type: string
   createdAt:
     type: string
     format: date-time
@@ -11,19 +13,17 @@ properties:
     $ref: ./ClientStatus.yaml
   isArchived:
     type: boolean
-  affiliateId:
-    type: string
   publicKey:
     type: string
   regenKey:
     type: string
 required:
   - name
+  - affiliateId
   - createdAt
   - updatedAt
   - status
   - isArchived
-  - affiliateId
   - publicKey
   - regenKey
 type: object

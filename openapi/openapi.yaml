@@ -109,4 +109,4 @@ paths:
     $ref: >-
       paths/api@v2@webhooks@campaign@{campaignId}@subscription@{webhookSubscriptionId}.yaml
 servers:
-  - url: 'https://dev.icecreamsocial.io/api/v2'
+  - url: 'https://dev.icecreamsocial.io'
