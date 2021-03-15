@@ -15,13 +15,6 @@ info:
     name: 'Oscar '
     email: oscar@ticketsocket.com
 openapi: 3.0.0
-securityDefinitions:
- bearerAuth:            # arbitrary name for the security scheme
-      type: http
-      scheme: bearer
-      bearerFormat: JWT 
-      in: header
-      name: Authorization
 paths:
   '/api/v2/affiliates/{affiliateId}':
     $ref: 'paths/api@v2@affiliates@{affiliateId}.yaml'
@@ -120,5 +113,12 @@ paths:
   '/api/v2/webhooks/campaign/{campaignId}/subscription/{webhookSubscriptionId}':
     $ref: >-
       paths/api@v2@webhooks@campaign@{campaignId}@subscription@{webhookSubscriptionId}.yaml
+securityDefinitions:
+ bearerAuth:           
+      type: http
+      scheme: bearer
+      bearerFormat: JWT 
+      in: header
+      name: Authorization
 servers:
   - url: 'https://dev.icecreamsocial.io'
