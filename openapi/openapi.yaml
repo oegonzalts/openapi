@@ -10,11 +10,11 @@ info:
   title: ics-api
   version: 1.0.0
   description: |
-    # General description
+    # Ice Cream Social API
     A potent API created for digital campaign marketing
 
-    # Authentication
-    To start testing API endpoints, obtain a JWT authorization token via “Get Authorization Token” first. Then use “JWT “ + token as Authorization header to make all calls that require authentication. 
+    # Authentication Process
+    To start testing API endpoints, obtain a JWT authorization token via “Get Authorization Token”  first. Then use “JWT “ + token as Authorization header to make all calls that require authentication. 
     <SecurityDefinitions />
   license:
     name: UNLICENSED
@@ -58,14 +58,9 @@ paths:
   '/api/v2/campaigns/{campaignId}/influencers/{influencerId}/conversions/{conversionId}':
     $ref: >-
       paths/api@v2@campaigns@{campaignId}@influencers@{influencerId}@conversions@{conversionId}.yaml
-  '/api/v2/campaigns/{campaignId}/influencers/{influencerId}/cardFlexRefund':
-    $ref: >-
-      paths/api@v2@campaigns@{campaignId}@influencers@{influencerId}@cardFlexRefund.yaml
   '/api/v2/campaigns/{campaignId}/influencers/{influencerId}/createManualConversion':
     $ref: >-
       paths/api@v2@campaigns@{campaignId}@influencers@{influencerId}@createManualConversion.yaml
-  /api/v2/campaigns/issueSquareGiftCard:
-    $ref: paths/api@v2@campaigns@issueSquareGiftCard.yaml
   /api/v2/campaigns/nested:
     $ref: paths/api@v2@campaigns@nested.yaml
   /api/v2/campaigns:
@@ -88,21 +83,6 @@ paths:
     $ref: paths/api@v2@clients.yaml
   '/api/v2/clients/regenPublicKey/{clientId}':
     $ref: 'paths/api@v2@clients@regenPublicKey@{clientId}.yaml'
-  '/api/v2/client/campaigns/{campaignId}':
-    $ref: 'paths/api@v2@client@campaigns@{campaignId}.yaml'
-  '/api/v2/client/campaigns/{campaignId}/influencers':
-    $ref: 'paths/api@v2@client@campaigns@{campaignId}@influencers.yaml'
-  '/api/v2/client/campaigns/{campaignId}/influencers/{influencerId}/invites/fb':
-    $ref: >-
-      paths/api@v2@client@campaigns@{campaignId}@influencers@{influencerId}@invites@fb.yaml
-  '/api/v2/client/campaigns/{campaignId}/influencers/{influencerId}/invites/generic':
-    $ref: >-
-      paths/api@v2@client@campaigns@{campaignId}@influencers@{influencerId}@invites@generic.yaml
-  '/api/v2/client/campaigns/{campaignId}/influencers/{influencerId}/invites/gm':
-    $ref: >-
-      paths/api@v2@client@campaigns@{campaignId}@influencers@{influencerId}@invites@gm.yaml
-  '/api/v2/client/campaigns/{campaignId}/email':
-    $ref: 'paths/api@v2@client@campaigns@{campaignId}@email.yaml'
   '/api/v2/users/{userId}':
     $ref: 'paths/api@v2@users@{userId}.yaml'
   /api/v2/users:
@@ -121,4 +101,4 @@ paths:
     $ref: >-
       paths/api@v2@webhooks@campaign@{campaignId}@subscription@{webhookSubscriptionId}.yaml
 servers:
-  - url: 'https://dev.icecreamsocial.io'
+  - url: 'https://dev.icecreamsocial.io/'

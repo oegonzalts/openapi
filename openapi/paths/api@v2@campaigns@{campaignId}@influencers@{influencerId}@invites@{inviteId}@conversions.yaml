@@ -19,8 +19,10 @@ get:
         application/json:
           schema:
             $ref: ../components/schemas/E_SERVER_ERROR_500.yaml
-  description: Long description
-  summary: Short title of api call
+  description: >-
+    Retrieves all conversions resulted from an invite. Use this API request see
+    trace the invite source of conversions and measure the impact of an invite.
+  summary: Get Conversions of an Invite
   tags:
     - Influencers
   security: []

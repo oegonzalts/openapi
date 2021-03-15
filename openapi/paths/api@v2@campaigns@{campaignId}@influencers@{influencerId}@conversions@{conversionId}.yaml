@@ -20,8 +20,10 @@ delete:
         application/json:
           schema:
             $ref: ../components/schemas/E_SERVER_ERROR_500.yaml
-  description: Long description
-  summary: Short title of api call
+  description: >-
+    Delete an conversion of an influencer. Use this API request can be used when
+    there is cancellation of refund of purchases.
+  summary: Delete a conversion
   tags:
     - Influencers
   security: []

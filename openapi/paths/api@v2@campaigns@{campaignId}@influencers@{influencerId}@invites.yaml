@@ -19,7 +19,7 @@ get:
         application/json:
           schema:
             $ref: ../components/schemas/E_SERVER_ERROR_500.yaml
-  description: Long description
+  description: Retrive invites of an influencer using influencerId
   summary: Get Invites by Influencer ID
   tags:
     - Influencers
