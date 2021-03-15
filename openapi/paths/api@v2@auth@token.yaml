@@ -34,7 +34,7 @@ post:
     If you do not have ICS credentials, please visit
     https://icecreamsocial.io/get-started/ to get a free trial or contact a
     member of ICS customer success team directly.
-  summary: Get Auhtorization Token
+  summary: Get Authorization Token
   tags:
     - Authentication
   security: []
