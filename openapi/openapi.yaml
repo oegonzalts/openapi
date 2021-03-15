@@ -1,5 +1,12 @@
 components:
-  securitySchemes: {}
+  securitySchemes: {
+    bearerAuth:           
+      type: http
+      scheme: bearer
+      bearerFormat: JWT 
+      in: header
+      name: Authorization
+  }
 info:
   title: ics-api
   version: 1.0.0
@@ -9,6 +16,7 @@ info:
 
     # Authentication
     To start testing API endpoints, obtain a JWT authorization token via “Get Authorization Token” first. Then use “JWT “ + token as Authorization header to make all calls that require authentication. 
+    <SecurityDefinitions />
   license:
     name: UNLICENSED
   contact:
@@ -113,12 +121,5 @@ paths:
   '/api/v2/webhooks/campaign/{campaignId}/subscription/{webhookSubscriptionId}':
     $ref: >-
       paths/api@v2@webhooks@campaign@{campaignId}@subscription@{webhookSubscriptionId}.yaml
-securityDefinitions:
- bearerAuth:           
-      type: http
-      scheme: bearer
-      bearerFormat: JWT 
-      in: header
-      name: Authorization
 servers:
   - url: 'https://dev.icecreamsocial.io'
