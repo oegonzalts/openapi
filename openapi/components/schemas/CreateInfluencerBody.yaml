@@ -1,4 +1,8 @@
 properties:
+  parentInfluencerId:
+    type: string
+  transactionId:
+    type: string
   name:
     type: string
   revenue:
@@ -12,5 +16,6 @@ properties:
 required:
   - name
   - email
+  - identifier
   - orderId
 type: object
