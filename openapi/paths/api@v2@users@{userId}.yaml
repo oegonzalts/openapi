@@ -82,4 +82,4 @@ put:
     content:
       application/json:
         schema:
-          $ref: ../components/schemas/User.yaml
+          $ref: ../components/schemas/CreateUserBody.yaml

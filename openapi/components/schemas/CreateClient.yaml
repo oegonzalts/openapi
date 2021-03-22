@@ -1,0 +1,14 @@
+properties:
+  name:
+    type: string
+  affiliateId:
+    type: string
+  status:
+    $ref: ./ClientStatus.yaml
+  isArchived:
+    type: boolean
+required:
+  - name
+  - affiliateId
+type: object
+additionalProperties: false

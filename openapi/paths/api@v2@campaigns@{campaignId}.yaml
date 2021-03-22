@@ -53,7 +53,12 @@ put:
         application/json:
           schema:
             $ref: ../components/schemas/E_SERVER_ERROR_500.yaml
-  description: Update a campaign's information
+  description: >-
+    Update a campaign's information. Note that this API documentation platform
+    does not support "multipart/form-data". 
+
+    To make this request correctly, use "multipart/form-data" and upload files
+    for "...Image" fields.
   summary: Update campaign
   tags:
     - Influencers and Campaigns

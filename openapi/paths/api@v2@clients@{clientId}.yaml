@@ -7,6 +7,12 @@ get:
         application/json:
           schema:
             $ref: ../components/schemas/StandardResponse_GetClientByIdResponse_.yaml
+    '400':
+      description: Bad Request
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/E_BAD_REQUEST_400.yaml
     '404':
       description: Not Found
       content:
@@ -20,7 +26,7 @@ get:
           schema:
             $ref: ../components/schemas/E_SERVER_ERROR_500.yaml
   description: Get information of a single client by client ID
-  summary: et Client by ID
+  summary: Get Client by ID
   tags:
     - Customer
   security: []
@@ -94,3 +100,9 @@ put:
       required: true
       schema:
         type: string
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/CreateClientBody.yaml

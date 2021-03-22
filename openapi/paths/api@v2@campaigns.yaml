@@ -19,7 +19,12 @@ post:
         application/json:
           schema:
             $ref: ../components/schemas/E_SERVER_ERROR_500.yaml
-  description: Create an Icecream Social campaign
+  description: >-
+    Create an Icecream Social campaign. Note that this API documentation
+    platform does not support "multipart/form-data". 
+
+    To make this request correctly, use "multipart/form-data" and upload files
+    for "...Image" fields.
   summary: Create campaign
   tags:
     - Influencers and Campaigns
