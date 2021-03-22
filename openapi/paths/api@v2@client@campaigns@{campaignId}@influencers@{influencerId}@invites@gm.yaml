@@ -1,5 +1,5 @@
-delete:
-  operationId: DeleteConversion
+post:
+  operationId: CreateInvitesGm
   responses:
     '200':
       description: Ok
@@ -7,7 +7,13 @@ delete:
         application/json:
           schema:
             $ref: >-
-              ../components/schemas/StandardResponse_DeleteConversionResponse_.yaml
+              ../components/schemas/StandardResponse_InfluencerCreatedResponse_.yaml
+    '400':
+      description: Bad Request
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/E_BAD_REQUEST_400.yaml
     '404':
       description: Not Found
       content:
@@ -20,26 +26,27 @@ delete:
         application/json:
           schema:
             $ref: ../components/schemas/E_SERVER_ERROR_500.yaml
-  description: >-
-    Delete an conversion of an influencer. Use this API request can be used when
-    there is cancellation or refund of purchases.
-  summary: Delete a conversion
+  description: Create an email invite for an influencer
+  summary: Create email invite
   tags:
-    - Influencers and Campaigns
+    - Client
   security: []
   parameters:
-    - in: path
+    - description: the campaign ID
+      in: path
       name: campaignId
       required: true
       schema:
         type: string
-    - in: path
+    - description: the influencer ID
+      in: path
       name: influencerId
       required: true
       schema:
         type: string
-    - in: path
-      name: conversionId
-      required: true
-      schema:
-        type: string
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/CreateInvitesGmBody.yaml

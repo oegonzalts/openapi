@@ -22,7 +22,7 @@ get:
   description: Get ICS script by integration platform method
   summary: Get ICS script by integration platform method
   tags:
-    - Influencers
+    - Influencers and Campaigns
   security: []
   parameters:
     - in: path

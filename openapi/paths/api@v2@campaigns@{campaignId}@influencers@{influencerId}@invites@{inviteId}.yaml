@@ -22,7 +22,7 @@ get:
   description: Get Invite by Influencer and Invite ID
   summary: Get Invite
   tags:
-    - Influencers
+    - Influencers and Campaigns
   security: []
   parameters:
     - in: path

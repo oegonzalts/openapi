@@ -22,7 +22,7 @@ get:
   description: Get all conversions of a campaign
   summary: Get conversions of a campaign
   tags:
-    - Influencers
+    - Influencers and Campaigns
   security: []
   parameters:
     - in: path

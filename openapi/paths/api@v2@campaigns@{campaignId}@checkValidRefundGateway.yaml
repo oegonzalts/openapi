@@ -22,7 +22,7 @@ get:
   description: Check if refund processor is valid before processing influencer reward
   summary: Refund gateway verification
   tags:
-    - Influencers
+    - Influencers and Campaigns
   security: []
   parameters:
     - in: path

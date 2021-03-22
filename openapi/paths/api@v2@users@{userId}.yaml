@@ -36,7 +36,7 @@ get:
       required: true
       schema:
         type: string
-post:
+put:
   operationId: UpdateUser
   responses:
     '200':

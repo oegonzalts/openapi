@@ -29,7 +29,7 @@ get:
   description: Export information of influencers as an excel file.
   summary: Export Influencers
   tags:
-    - Influencers
+    - Influencers and Campaigns
   security: []
   parameters:
     - in: path

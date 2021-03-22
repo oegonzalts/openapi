@@ -6,7 +6,8 @@ get:
       content:
         application/json:
           schema:
-            $ref: ../components/schemas/StandardResponse_any_.yaml
+            $ref: >-
+              ../components/schemas/StandardResponse_GetCampaignByIdResponse_.yaml
     '404':
       description: Not Found
       content:
@@ -22,7 +23,7 @@ get:
   description: Get a campaign's information by campaign ID
   summary: Get campaign by ID
   tags:
-    - Influencers
+    - Influencers and Campaigns
   security: []
   parameters:
     - in: path
@@ -38,7 +39,8 @@ put:
       content:
         application/json:
           schema:
-            $ref: ../components/schemas/StandardResponse_any_.yaml
+            $ref: >-
+              ../components/schemas/StandardResponse_GetCampaignByIdResponse_.yaml
     '404':
       description: Not Found
       content:
@@ -54,7 +56,7 @@ put:
   description: Update a campaign's information
   summary: Update campaign
   tags:
-    - Influencers
+    - Influencers and Campaigns
   security: []
   parameters:
     - in: path
@@ -62,6 +64,12 @@ put:
       required: true
       schema:
         type: string
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/CreateCampaignBody.yaml
 delete:
   operationId: DeleteCampaign
   responses:
@@ -70,7 +78,8 @@ delete:
       content:
         application/json:
           schema:
-            $ref: ../components/schemas/StandardResponse_any_.yaml
+            $ref: >-
+              ../components/schemas/StandardResponse_GetCampaignByIdResponse_.yaml
     '404':
       description: Not Found
       content:
@@ -86,6 +95,6 @@ delete:
   description: Delete a campaign
   summary: Delete campaign
   tags:
-    - Influencers
+    - Influencers and Campaigns
   security: []
   parameters: []

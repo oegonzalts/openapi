@@ -19,10 +19,13 @@ get:
         application/json:
           schema:
             $ref: ../components/schemas/E_SERVER_ERROR_500.yaml
-  description: Get Influenced Conversion by Invited Influencer ID
-  summary: Get Influenced Conversion by Invited Influencer ID
+  description: >-
+    Retrieves all the conversions resulted by the invites of the influencer
+    whose ID is provided. Use this API request to get of list of influenced
+    conversions that can be managed for the influencer.
+  summary: Get Influenced Conversions by Invited Influencer ID
   tags:
-    - Influencers
+    - Influencers and Campaigns
   security: []
   parameters:
     - in: path

@@ -19,8 +19,8 @@ get:
         application/json:
           schema:
             $ref: ../components/schemas/E_SERVER_ERROR_500.yaml
-  description: Get clients by filter
-  summary: Get nested clients
+  description: Get information of a single client by client ID
+  summary: et Client by ID
   tags:
     - Customer
   security: []

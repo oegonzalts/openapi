@@ -32,7 +32,7 @@ post:
     once the influencer has been created (given that it is a unique Influencer)
   summary: Create Influencer
   tags:
-    - Influencers
+    - Influencers and Campaigns
   security: []
   parameters:
     - description: The campaign ID
@@ -78,7 +78,7 @@ get:
   description: Get information of all influencers of a campaign.
   summary: Get Influencers
   tags:
-    - Influencers
+    - Influencers and Campaigns
   security: []
   parameters:
     - in: path

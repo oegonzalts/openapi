@@ -6,7 +6,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: ../components/schemas/StandardResponse_any_.yaml
+            $ref: ../components/schemas/StandardResponse_GetCampaignsResponse_.yaml
     '404':
       description: Not Found
       content:
@@ -22,6 +22,6 @@ get:
   description: Get campaign by filter and affiliate hierchical group
   summary: Get campaign by filter
   tags:
-    - Influencers
+    - Influencers and Campaigns
   security: []
   parameters: []

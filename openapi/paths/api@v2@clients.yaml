@@ -26,7 +26,7 @@ post:
           schema:
             $ref: ../components/schemas/E_SERVER_ERROR_500.yaml
   description: Create a client
-  summary: Create client
+  summary: Create a Client
   tags:
     - Customer
   security: []

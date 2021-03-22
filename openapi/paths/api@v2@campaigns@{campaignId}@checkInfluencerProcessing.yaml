@@ -22,7 +22,7 @@ get:
   description: Show influencer reward information for confirmation
   summary: Show influencer reward information
   tags:
-    - Influencers
+    - Influencers and Campaigns
   security: []
   parameters:
     - in: path

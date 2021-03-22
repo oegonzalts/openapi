@@ -23,7 +23,7 @@ post:
   description: Create a manual conversion foe testing or admin related purpose
   summary: Create Manual Conversion
   tags:
-    - Influencers
+    - Influencers and Campaigns
   security: []
   parameters:
     - in: path

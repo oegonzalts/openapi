@@ -24,7 +24,7 @@ get:
     trace the invite source of conversions and measure the impact of an invite.
   summary: Get Conversions of an Invite
   tags:
-    - Influencers
+    - Influencers and Campaigns
   security: []
   parameters:
     - in: path

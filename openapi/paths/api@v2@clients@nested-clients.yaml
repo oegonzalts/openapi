@@ -19,8 +19,13 @@ get:
         application/json:
           schema:
             $ref: ../components/schemas/E_SERVER_ERROR_500.yaml
-  description: Get information of a single client by client ID
-  summary: Get Client by ID
+  description: >-
+    Get clients by filter. This request will return all the hierarchy of clients
+    belonging to the logged in user's affiliate.
+
+    This call is used to see which clients can be managed with your current
+    access
+  summary: Get nested clients
   tags:
     - Customer
   security: []

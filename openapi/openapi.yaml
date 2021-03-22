@@ -83,6 +83,21 @@ paths:
     $ref: paths/api@v2@clients.yaml
   '/api/v2/clients/regenPublicKey/{clientId}':
     $ref: 'paths/api@v2@clients@regenPublicKey@{clientId}.yaml'
+  '/api/v2/client/campaigns/{campaignId}':
+    $ref: 'paths/api@v2@client@campaigns@{campaignId}.yaml'
+  '/api/v2/client/campaigns/{campaignId}/influencers':
+    $ref: 'paths/api@v2@client@campaigns@{campaignId}@influencers.yaml'
+  '/api/v2/client/campaigns/{campaignId}/influencers/{influencerId}/invites/fb':
+    $ref: >-
+      paths/api@v2@client@campaigns@{campaignId}@influencers@{influencerId}@invites@fb.yaml
+  '/api/v2/client/campaigns/{campaignId}/influencers/{influencerId}/invites/generic':
+    $ref: >-
+      paths/api@v2@client@campaigns@{campaignId}@influencers@{influencerId}@invites@generic.yaml
+  '/api/v2/client/campaigns/{campaignId}/influencers/{influencerId}/invites/gm':
+    $ref: >-
+      paths/api@v2@client@campaigns@{campaignId}@influencers@{influencerId}@invites@gm.yaml
+  '/api/v2/client/campaigns/{campaignId}/email':
+    $ref: 'paths/api@v2@client@campaigns@{campaignId}@email.yaml'
   '/api/v2/users/{userId}':
     $ref: 'paths/api@v2@users@{userId}.yaml'
   /api/v2/users:
