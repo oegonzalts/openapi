@@ -16,6 +16,20 @@ info:
     # Authentication Process
     To start testing API endpoints, obtain a JWT authorization token via “Get Authorization Token”  first. Then use “JWT “ + token as Authorization header to make all calls that require authentication. 
     <SecurityDefinitions />
+
+    # ICS API Terms 
+    Affiliate is an organization that oversees multiple clients or sub-affiliates (if needed). This organization gives affiliate users the rights to create and manage client organizations and client users.
+
+    Affiliate user is a person that oversees multiple clients or and client users. This person has rights to create/manage clients and client users.
+
+    Client is an organization that oversees multiple campaign and influencers created under those campaigns. This organization give client users the rights to create and manage campaigns and influencers
+
+    Affiliate user is a person that oversees multiple campaigns and influencers. This person has rights to create/manage campaigns and influencers.
+
+    Campaign is a conversion tracking reward system that contains influencer, invites, and conversion information. Each influencer created is tied to a campaign
+
+    Influencer is an end user that participates in ICS campaign and creates values for the client organization by inviting other people to participate in the ICS campaign
+
   license:
     name: UNLICENSED
   contact:
