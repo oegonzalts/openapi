@@ -34,7 +34,8 @@ get:
   summary: Get Affiliate by ID
   tags:
     - Affiliates
-  security: []
+  security: 
+    - bearerAuth: []
   parameters:
     - in: path
       name: affiliateId
