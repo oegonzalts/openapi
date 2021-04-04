@@ -6,6 +6,8 @@ components:
       bearerFormat: JWT 
       in: header
       name: Authorization
+security:
+  - bearerAuth: [] 
 info:
   title: ics-api
   version: 1.0.0
