@@ -35,7 +35,8 @@ post:
   summary: Create an Affiliate
   tags:
     - Affiliates
-  security: []
+  security:
+    - Authorization: []
   parameters: []
   requestBody:
     required: true

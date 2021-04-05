@@ -1,8 +1,8 @@
 properties:
-  affiliates:
+  campaigns:
     items:
       $ref: ./Campaign.yaml
     type: array
 required:
-  - affiliates
+  - campaigns
 type: object

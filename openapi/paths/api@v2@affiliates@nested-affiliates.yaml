@@ -34,8 +34,8 @@ get:
   summary: Get Nested Affiliates by Affiliate ID.
   tags:
     - Affiliates
-  security: 
-  - bearerAuth: []
+  security:
+    - Authorization: []
   parameters:
     - description: >-
         Affiliate ID used as root to retrieve hierarchy of affiliates belonging

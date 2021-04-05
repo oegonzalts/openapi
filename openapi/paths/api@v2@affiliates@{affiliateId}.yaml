@@ -34,8 +34,8 @@ get:
   summary: Get Affiliate by ID
   tags:
     - Affiliates
-  security: 
-    - bearerAuth: []
+  security:
+    - Authorization: []
   parameters:
     - in: path
       name: affiliateId
@@ -76,7 +76,8 @@ delete:
   summary: Delete an Affiliate
   tags:
     - Affiliates
-  security: []
+  security:
+    - Authorization: []
   parameters:
     - in: path
       name: affiliateId
@@ -117,7 +118,8 @@ put:
   summary: Update an Affiliate
   tags:
     - Affiliates
-  security: []
+  security:
+    - Authorization: []
   parameters:
     - in: path
       name: affiliateId
