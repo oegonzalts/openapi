@@ -28,7 +28,8 @@ delete:
   summary: Remove Webhook Subscription
   tags:
     - Webhooks
-  security: []
+  security:
+    - Authorization: []
   parameters:
     - description: The campaign's identifier
       in: path

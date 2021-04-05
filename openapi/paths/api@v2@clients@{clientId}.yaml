@@ -29,7 +29,8 @@ get:
   summary: Get Client by ID
   tags:
     - Customer
-  security: []
+  security:
+    - Authorization: []
   parameters:
     - in: path
       name: clientId
@@ -61,7 +62,8 @@ delete:
   summary: Delete client
   tags:
     - Customer
-  security: []
+  security:
+    - Authorization: []
   parameters:
     - in: path
       name: clientId
@@ -93,7 +95,8 @@ put:
   summary: Update client
   tags:
     - Customer
-  security: []
+  security:
+    - Authorization: []
   parameters:
     - in: path
       name: clientId

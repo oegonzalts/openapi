@@ -24,7 +24,8 @@ put:
   summary: Regenerate Public Key
   tags:
     - Customer
-  security: []
+  security:
+    - Authorization: []
   parameters:
     - in: path
       name: clientId

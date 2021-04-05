@@ -32,7 +32,8 @@ post:
   summary: Register Campaign to Webhook
   tags:
     - Webhooks
-  security: []
+  security:
+    - Authorization: []
   parameters:
     - description: The campaign's identifier
       in: path
@@ -70,7 +71,8 @@ get:
   summary: Get Registered Campaign Webhooks
   tags:
     - Webhooks
-  security: []
+  security:
+    - Authorization: []
   parameters:
     - description: The campaign's identifier
       in: path

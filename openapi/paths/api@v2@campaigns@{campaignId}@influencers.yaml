@@ -33,7 +33,8 @@ post:
   summary: Create Influencer
   tags:
     - Influencers and Campaigns
-  security: []
+  security:
+    - Authorization: []
   parameters:
     - description: The campaign ID
       in: path
@@ -79,7 +80,8 @@ get:
   summary: Get Influencers
   tags:
     - Influencers and Campaigns
-  security: []
+  security:
+    - Authorization: []
   parameters:
     - in: path
       name: campaignId

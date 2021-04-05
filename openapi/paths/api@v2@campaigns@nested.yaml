@@ -23,5 +23,6 @@ get:
   summary: Get campaign by filter
   tags:
     - Influencers and Campaigns
-  security: []
+  security:
+    - Authorization: []
   parameters: []

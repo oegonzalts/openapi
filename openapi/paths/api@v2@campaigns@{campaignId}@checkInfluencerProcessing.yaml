@@ -23,7 +23,8 @@ get:
   summary: Show influencer reward information
   tags:
     - Influencers and Campaigns
-  security: []
+  security:
+    - Authorization: []
   parameters:
     - in: path
       name: campaignId

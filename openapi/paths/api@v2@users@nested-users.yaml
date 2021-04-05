@@ -32,7 +32,8 @@ get:
   summary: Get nested admin users by affiliate ID
   tags:
     - Users
-  security: []
+  security:
+    - Authorization: []
   parameters:
     - description: >-
         The required affiliate id used as root to retrieve hierarchy of user

@@ -23,7 +23,8 @@ get:
   summary: Get Invite
   tags:
     - Influencers and Campaigns
-  security: []
+  security:
+    - Authorization: []
   parameters:
     - in: path
       name: campaignId

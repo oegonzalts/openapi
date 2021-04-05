@@ -29,7 +29,8 @@ get:
   summary: Get a single user information by user ID.
   tags:
     - Users
-  security: []
+  security:
+    - Authorization: []
   parameters:
     - in: path
       name: userId
@@ -69,7 +70,8 @@ put:
   summary: Updates a user
   tags:
     - Users
-  security: []
+  security:
+    - Authorization: []
   parameters:
     - description: The user id to update
       in: path

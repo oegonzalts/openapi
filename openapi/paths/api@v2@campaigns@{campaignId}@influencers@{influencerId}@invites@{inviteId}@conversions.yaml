@@ -25,7 +25,8 @@ get:
   summary: Get Conversions of an Invite
   tags:
     - Influencers and Campaigns
-  security: []
+  security:
+    - Authorization: []
   parameters:
     - in: path
       name: campaignId

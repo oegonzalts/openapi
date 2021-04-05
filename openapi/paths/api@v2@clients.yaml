@@ -29,7 +29,8 @@ post:
   summary: Create a Client
   tags:
     - Customer
-  security: []
+  security:
+    - Authorization: []
   parameters: []
   requestBody:
     required: true

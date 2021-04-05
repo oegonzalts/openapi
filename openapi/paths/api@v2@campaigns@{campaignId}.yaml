@@ -24,7 +24,8 @@ get:
   summary: Get campaign by ID
   tags:
     - Influencers and Campaigns
-  security: []
+  security:
+    - Authorization: []
   parameters:
     - in: path
       name: campaignId
@@ -62,7 +63,8 @@ put:
   summary: Update campaign
   tags:
     - Influencers and Campaigns
-  security: []
+  security:
+    - Authorization: []
   parameters:
     - in: path
       name: campaignId
@@ -101,5 +103,6 @@ delete:
   summary: Delete campaign
   tags:
     - Influencers and Campaigns
-  security: []
+  security:
+    - Authorization: []
   parameters: []

@@ -26,7 +26,8 @@ delete:
   summary: Delete a conversion
   tags:
     - Influencers and Campaigns
-  security: []
+  security:
+    - Authorization: []
   parameters:
     - in: path
       name: campaignId

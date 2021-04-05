@@ -19,7 +19,8 @@ get:
   summary: Get Daily Campaign Statistics
   tags:
     - Users
-  security: []
+  security:
+    - Authorization: []
   parameters:
     - description: >-
         From date that is used to populate statistics overview (yyyy-mm-dd

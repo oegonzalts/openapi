@@ -31,5 +31,6 @@ get:
   summary: Get Webhook Events
   tags:
     - Webhooks
-  security: []
+  security:
+    - Authorization: []
   parameters: []

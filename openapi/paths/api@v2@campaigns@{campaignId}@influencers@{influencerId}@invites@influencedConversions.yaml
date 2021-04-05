@@ -26,7 +26,8 @@ get:
   summary: Get Influenced Conversions by Invited Influencer ID
   tags:
     - Influencers and Campaigns
-  security: []
+  security:
+    - Authorization: []
   parameters:
     - in: path
       name: campaignId

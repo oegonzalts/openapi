@@ -23,7 +23,8 @@ get:
   summary: Get ICS script by integration platform method
   tags:
     - Influencers and Campaigns
-  security: []
+  security:
+    - Authorization: []
   parameters:
     - in: path
       name: campaignId

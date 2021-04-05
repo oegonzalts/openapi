@@ -23,7 +23,8 @@ post:
   summary: Process Influencer
   tags:
     - Influencers and Campaigns
-  security: []
+  security:
+    - Authorization: []
   parameters:
     - in: path
       name: campaignId

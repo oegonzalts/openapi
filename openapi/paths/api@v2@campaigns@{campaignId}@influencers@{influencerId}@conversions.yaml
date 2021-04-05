@@ -23,7 +23,8 @@ get:
   summary: Get Conversions by Influencer ID
   tags:
     - Influencers and Campaigns
-  security: []
+  security:
+    - Authorization: []
   parameters:
     - in: path
       name: campaignId

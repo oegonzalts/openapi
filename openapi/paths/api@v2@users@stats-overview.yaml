@@ -24,7 +24,8 @@ get:
   summary: Get Campaign Overview Statistics
   tags:
     - Users
-  security: []
+  security:
+    - Authorization: []
   parameters:
     - description: >-
         From date that is used to populate statistics overview (yyyy-mm-dd
